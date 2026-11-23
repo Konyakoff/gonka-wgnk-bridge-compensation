@@ -15,7 +15,7 @@ whole, with everything needed to check it: the method, the raw on-chain data, th
 under three options, a critique of the method itself, and three independent reviews.
 
 **Nothing here is decided.** The purpose is to let anyone — with or without an AI assistant — verify the logic, the
-addresses and the amounts, and to reach a shared position in the discussion: the discussion thread in `gonka-ai/gonka` (link is added here once the thread is open)
+addresses and the amounts, and to reach a shared position in the discussion: https://github.com/gonka-ai/gonka/discussions/2306
 
 ## The proposal in one minute
 
@@ -118,7 +118,7 @@ in the changelog).
 
 ## Discussion and objections
 
-- **Method, the dividing line, which option** — in the discussion thread: the discussion thread in `gonka-ai/gonka` (link is added here once the thread is open)
+- **Method, the dividing line, which option** — in the discussion thread: https://github.com/gonka-ai/gonka/discussions/2306
 - **“My address is missing / my amount is wrong”** — [open an issue](../../issues/new/choose) here.
 - Any payout from the community pool is decided only by on-chain governance; this repository decides nothing.
 
