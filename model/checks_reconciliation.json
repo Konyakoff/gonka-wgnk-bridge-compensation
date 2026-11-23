@@ -1,0 +1,85 @@
+{
+ "supply_snap": {
+  "logs": 13090977.71456635,
+  "contract": 13090977.714566352,
+  "diff": -1.862645149230957e-09
+ },
+ "supply_end": {
+  "logs": 20810034.90041014,
+  "contract": 20810034.90041014,
+  "diff": 0.0
+ },
+ "lp_vs_pool_snap": {
+  "0x203ee836d417cf944133bbdd2c62b4bc7388c55d": {
+   "positions": 3638280.781954142,
+   "pool_balance": 3639174.077344344
+  },
+  "0xdbc0edbced03c87a7f287f9949e01c012511f117": {
+   "positions": 8883.723909730748,
+   "pool_balance": 8887.924895822
+  }
+ },
+ "lp_vs_pm_snap": {
+  "positions_v4": 335665.1672468405,
+  "pool_manager_balance": 335893.498803274
+ },
+ "honest_vs_supply": {
+  "b0_wallets_plus_lp": 13088885.487567462,
+  "supply_snap": 13090977.714566352
+ },
+ "lp_vs_pool_all_states": {
+  "snap:0x203ee836": {
+   "positions_wgnk": 3638280.781954142,
+   "pool_wgnk": 3639174.077344346,
+   "diff_wgnk": 893.2953902040608,
+   "positions_usdt": 154524.65287836207,
+   "pool_usdt": 154525.071158,
+   "diff_usdt": 0.4182796379318461
+  },
+  "snap:0xdbc0edbc": {
+   "positions_wgnk": 8883.723909730748,
+   "pool_wgnk": 8887.924895822,
+   "diff_wgnk": 4.200986091251252,
+   "positions_usdt": 838.043465074712,
+   "pool_usdt": 838.043945,
+   "diff_usdt": 0.00047992528800477885
+  },
+  "t1:0x203ee836": {
+   "positions_wgnk": 70645.16892355395,
+   "pool_wgnk": 79370.151652528,
+   "diff_wgnk": 8724.98272897405,
+   "positions_usdt": 72.41503086014343,
+   "pool_usdt": 174.945414,
+   "diff_usdt": 102.53038313985657
+  },
+  "t1:0xdbc0edbc": {
+   "positions_wgnk": 21817.296406917532,
+   "pool_wgnk": 22849.402845864,
+   "diff_wgnk": 1032.1064389464664,
+   "positions_usdt": 432.39570829696453,
+   "pool_usdt": 445.040339,
+   "diff_usdt": 12.644630703035489
+  },
+  "end:0x203ee836": {
+   "positions_wgnk": 70766.92458051899,
+   "pool_wgnk": 79522.959327145,
+   "diff_wgnk": 8756.034746626014,
+   "positions_usdt": 43.85121644874642,
+   "pool_usdt": 44.182947,
+   "diff_usdt": 0.3317305512535782
+  },
+  "end:0xdbc0edbc": {
+   "positions_wgnk": 31044.47545826163,
+   "pool_wgnk": 32886.374874308,
+   "diff_wgnk": 1841.8994160463699,
+   "positions_usdt": 398.44125491486216,
+   "pool_usdt": 398.447554,
+   "diff_usdt": 0.0062990851378685875
+  }
+ },
+ "lp_liquidity_mismatch": [],
+ "unknown_owner_positions": 0,
+ "unpriced_positions": 4,
+ "txs_scanned": 2598,
+ "p0_check": 0.1428805236181846
+}

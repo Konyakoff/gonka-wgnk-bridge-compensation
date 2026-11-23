@@ -1,0 +1,933 @@
+{
+ "p0": 0.1428805236181846,
+ "eth_usd_now": 1729.1468,
+ "t0_block": 26443607,
+ "snap_block": 26443612,
+ "t1_block": 26445519,
+ "t1_ts": 1795047847,
+ "t2_block": 26475449,
+ "t2_ts": 1795408200,
+ "k_pool": {
+  "ladder": 0.22008173928892014,
+  "exp": 0.14349954756353941,
+  "ladder10": 0.2153834698933889,
+  "ladder0913": 0.20091560753467064
+ },
+ "ts_mismatch_rows": 0,
+ "entities_missing_in_base": [],
+ "gradient": [
+  {
+   "until_ts": 1795052141,
+   "k": 0.5
+  },
+  {
+   "until_ts": 1795089780,
+   "k": 0.25
+  },
+  {
+   "until_ts": 1795134247,
+   "k": 0.125
+  },
+  {
+   "until_ts": 1795408200,
+   "k": 0.0
+  }
+ ],
+ "windows": {
+  "A": {
+   "swaps": 2019,
+   "usd": 554429.357271,
+   "txs": 1564,
+   "entities": 317
+  },
+  "B": {
+   "swaps": 1261,
+   "usd": 15840.906339,
+   "txs": 1034,
+   "entities": 172
+  },
+  "B_steps": [
+   {
+    "from_ts": 1795047847,
+    "to_ts": 1795052141,
+    "k": 0.5,
+    "swaps": 151,
+    "usd": 2564.4007189999998,
+    "entities": 44
+   },
+   {
+    "from_ts": 1795052141,
+    "to_ts": 1795089780,
+    "k": 0.25,
+    "swaps": 592,
+    "usd": 7327.878529,
+    "entities": 97
+   },
+   {
+    "from_ts": 1795089780,
+    "to_ts": 1795134247,
+    "k": 0.125,
+    "swaps": 278,
+    "usd": 2976.993818,
+    "entities": 57
+   },
+   {
+    "from_ts": 1795134247,
+    "to_ts": 1795408200,
+    "k": 0.0,
+    "swaps": 240,
+    "usd": 2971.6332730000004,
+    "entities": 73
+   }
+  ]
+ },
+ "variants": {
+  "v1": {
+   "recipients": 948,
+   "recipients_gnk": 847,
+   "recipients_money": 168,
+   "recipients_ge_1usd": 832,
+   "totals": {
+    "gnk": 13032441.440388681,
+    "usdt": 213395.34185003486,
+    "usdc": 21880.082802602978,
+    "dai": 26.885536,
+    "eth": 34.15992493862777
+   },
+   "reserve": {
+    "usdt": 884150.874884,
+    "usdc": 647.736653
+   },
+   "stables_people_usd": 235302.31018863784,
+   "money_people_usd": 294369.8350845062,
+   "value_people_usd": 2156451.892110568,
+   "n_eth": 70,
+   "n_token_transfers": 118,
+   "gas_eth": 0.00099042627204,
+   "gas_usd": 1.7125924189338957,
+   "eth_returned": 593.4350196834334,
+   "gnk_returned": 12900401.003716951,
+   "gnk_in_escrow": 98276.762424376,
+   "gnk_in_flight": 1509.7000000100002,
+   "gnk_need": 13033951.140388692,
+   "eth_usd": 1729.1468,
+   "eth_need": 681.9375655172397,
+   "eth_gap": 88.50254583380627,
+   "eth_surplus": 0.0,
+   "gnk_gap": 35273.37424736457,
+   "cost_usd": 158073.77210262307,
+   "cost_gnk_eq": 1106335.335983503,
+   "community_pool_now": 115520510.80211516,
+   "cost_share_pool": 0.009576960215131304,
+   "sensitivity_eth": {
+    "-10%": {
+     "eth_usd": 1556.2321200000001,
+     "eth_need": 753.9127488674997,
+     "eth_gap": 160.47772918406622,
+     "eth_surplus": 0.0,
+     "gnk_gap": 35273.37424736457,
+     "cost_usd": 254780.4748831489,
+     "cost_gnk_eq": 1783171.4808380129
+    },
+    "+10%": {
+     "eth_usd": 1902.06148,
+     "eth_need": 623.0487791397543,
+     "eth_gap": 29.61375945632085,
+     "eth_surplus": 0.0,
+     "gnk_gap": 35273.37424736457,
+     "cost_usd": 61367.06932209727,
+     "cost_gnk_eq": 429499.191128993
+    }
+   }
+  },
+  "v2": {
+   "recipients": 989,
+   "recipients_gnk": 847,
+   "recipients_money": 222,
+   "recipients_ge_1usd": 864,
+   "totals": {
+    "gnk": 13035063.865866182,
+    "usdt": 215650.17448117223,
+    "usdc": 22345.274404073363,
+    "dai": 30.403009852166555,
+    "eth": 34.3855780274484
+   },
+   "reserve": {
+    "usdt": 884150.874884,
+    "usdc": 647.736653
+   },
+   "stables_people_usd": 238025.85189509776,
+   "money_people_usd": 297483.56410741044,
+   "value_people_usd": 2159940.3146588476,
+   "n_eth": 91,
+   "n_token_transfers": 162,
+   "gas_eth": 0.0013043669453070002,
+   "gas_usd": 2.2554419295033745,
+   "eth_returned": 593.4350196834334,
+   "gnk_returned": 12900401.003716951,
+   "gnk_in_escrow": 98276.762424376,
+   "gnk_in_flight": 1509.7000000100002,
+   "gnk_need": 13036573.565866193,
+   "eth_usd": 1729.1468,
+   "eth_need": 683.7386109070324,
+   "eth_gap": 90.30359122359891,
+   "eth_surplus": 0.0,
+   "gnk_gap": 37895.799724865574,
+   "cost_usd": 161562.7375004128,
+   "cost_gnk_eq": 1130754.097263474,
+   "community_pool_now": 115520510.80211516,
+   "cost_share_pool": 0.009788340524224639,
+   "sensitivity_eth": {
+    "-10%": {
+     "eth_usd": 1556.2321200000001,
+     "eth_need": 755.8888029639921,
+     "eth_gap": 162.4537832805587,
+     "eth_surplus": 0.0,
+     "gnk_gap": 37895.799724865574,
+     "cost_usd": 258230.36726434308,
+     "cost_gnk_eq": 1807316.7757587763
+    },
+    "+10%": {
+     "eth_usd": 1902.06148,
+     "eth_need": 624.7066355877015,
+     "eth_gap": 31.27161590426806,
+     "eth_surplus": 0.0,
+     "gnk_gap": 37895.799724865574,
+     "cost_usd": 64895.10773648229,
+     "cost_gnk_eq": 454191.41876817006
+    }
+   }
+  },
+  "v3": {
+   "recipients": 997,
+   "recipients_gnk": 847,
+   "recipients_money": 239,
+   "recipients_ge_1usd": 873,
+   "totals": {
+    "gnk": 13037901.415144127,
+    "usdt": 225171.55087240943,
+    "usdc": 24192.270587126433,
+    "dai": 35.831947,
+    "eth": 35.540815715303005
+   },
+   "reserve": {
+    "usdt": 884150.874884,
+    "usdc": 647.736653
+   },
+   "stables_people_usd": 249399.65340653586,
+   "money_people_usd": 310854.9411700418,
+   "value_people_usd": 2173717.122248104,
+   "n_eth": 99,
+   "n_token_transfers": 173,
+   "gas_eth": 0.0013887365907030002,
+   "gas_usd": 2.4013294318570026,
+   "eth_returned": 593.4350196834334,
+   "gnk_returned": 12900401.003716951,
+   "gnk_in_escrow": 98276.762424376,
+   "gnk_in_flight": 1509.7000000100002,
+   "gnk_need": 13039411.115144137,
+   "eth_usd": 1729.1468,
+   "eth_need": 691.4716286879018,
+   "eth_gap": 98.03660900446835,
+   "eth_surplus": 0.0,
+   "gnk_gap": 40733.349002810064,
+   "cost_usd": 175339.69097717138,
+   "cost_gnk_eq": 1227176.9905164014,
+   "community_pool_now": 115520510.80211516,
+   "cost_share_pool": 0.010623022543750145,
+   "sensitivity_eth": {
+    "-10%": {
+     "eth_usd": 1556.2321200000001,
+     "eth_need": 764.352675825236,
+     "eth_gap": 170.91765614180258,
+     "eth_surplus": 0.0,
+     "gnk_gap": 40733.349002810064,
+     "cost_usd": 271807.54859723226,
+     "cost_gnk_eq": 1902341.492837579
+    },
+    "+10%": {
+     "eth_usd": 1902.06148,
+     "eth_need": 631.8416810300829,
+     "eth_gap": 38.40666134664946,
+     "eth_surplus": 0.0,
+     "gnk_gap": 40733.349002810064,
+     "cost_usd": 78871.83335711062,
+     "cost_gnk_eq": 552012.4881952245
+    }
+   }
+  },
+  "v0_ignore_b": {
+   "recipients": 956,
+   "recipients_gnk": 850,
+   "recipients_money": 174,
+   "recipients_ge_1usd": 839,
+   "totals": {
+    "gnk": 13032741.584427085,
+    "usdt": 214000.85626542923,
+    "usdc": 22140.283890602976,
+    "dai": 26.885536,
+    "eth": 34.56862273058042
+   },
+   "reserve": {
+    "usdt": 884150.874884,
+    "usdc": 647.736653
+   },
+   "stables_people_usd": 236168.02569203218,
+   "money_people_usd": 295942.2490670226,
+   "value_people_usd": 2158067.1908304524,
+   "n_eth": 74,
+   "n_token_transfers": 121,
+   "gas_eth": 0.0010173267386880001,
+   "gas_usd": 1.7591072747567915,
+   "eth_returned": 593.4350196834334,
+   "gnk_returned": 12900401.003716951,
+   "gnk_in_escrow": 98276.762424376,
+   "gnk_in_flight": 1509.7000000100002,
+   "gnk_need": 13034251.284427095,
+   "eth_usd": 1729.1468,
+   "eth_need": 682.8469507107768,
+   "eth_gap": 89.41193102734337,
+   "eth_surplus": 0.0,
+   "gnk_gap": 35573.518285767976,
+   "cost_usd": 159689.1173373631,
+   "cost_gnk_eq": 1117640.902297472,
+   "community_pool_now": 115520510.80211516,
+   "cost_share_pool": 0.009674826526797251,
+   "sensitivity_eth": {
+    "-10%": {
+     "eth_usd": 1556.2321200000001,
+     "eth_need": 754.8777630056053,
+     "eth_gap": 161.44274332217185,
+     "eth_surplus": 0.0,
+     "gnk_gap": 35573.518285767976,
+     "cost_usd": 256325.14561849096,
+     "cost_gnk_eq": 1793982.4066117022
+    },
+    "+10%": {
+     "eth_usd": 1902.06148,
+     "eth_need": 623.9126497422806,
+     "eth_gap": 30.477630058847126,
+     "eth_surplus": 0.0,
+     "gnk_gap": 35573.518285767976,
+     "cost_usd": 63053.08905623485,
+     "cost_gnk_eq": 441299.3979832392
+    }
+   }
+  },
+  "v2_exp": {
+   "recipients": 979,
+   "recipients_gnk": 847,
+   "recipients_money": 210,
+   "recipients_ge_1usd": 845,
+   "totals": {
+    "gnk": 13033317.471854037,
+    "usdt": 213968.40279691978,
+    "usdc": 22178.8118729488,
+    "dai": 31.30570843308364,
+    "eth": 34.211431777492116
+   },
+   "reserve": {
+    "usdt": 884150.874884,
+    "usdc": 647.736653
+   },
+   "stables_people_usd": 236178.52037830168,
+   "money_people_usd": 295335.1081597705,
+   "value_people_usd": 2157542.3330203085,
+   "n_eth": 87,
+   "n_token_transfers": 153,
+   "gas_eth": 0.0012407840241390002,
+   "gas_usd": 2.145497724831075,
+   "eth_returned": 593.4350196834334,
+   "gnk_returned": 12900401.003716951,
+   "gnk_in_escrow": 98276.762424376,
+   "gnk_in_flight": 1509.7000000100002,
+   "gnk_need": 13034827.171854047,
+   "eth_usd": 1729.1468,
+   "eth_need": 682.4960525008607,
+   "eth_gap": 89.0610328174273,
+   "eth_surplus": 0.0,
+   "gnk_gap": 36149.405712719876,
+   "cost_usd": 159164.645917669,
+   "cost_gnk_eq": 1113970.2031257947,
+   "community_pool_now": 115520510.80211516,
+   "cost_share_pool": 0.009643051224332,
+   "sensitivity_eth": {
+    "-10%": {
+     "eth_usd": 1556.2321200000001,
+     "eth_need": 754.5275391607879,
+     "eth_gap": 161.09251947735447,
+     "eth_surplus": 0.0,
+     "gnk_gap": 36149.405712719876,
+     "cost_usd": 255862.39911910426,
+     "cost_gnk_eq": 1790743.7111781435
+    },
+    "+10%": {
+     "eth_usd": 1902.06148,
+     "eth_need": 623.5611997791021,
+     "eth_gap": 30.1261800956687,
+     "eth_surplus": 0.0,
+     "gnk_gap": 36149.405712719876,
+     "cost_usd": 62466.892716233764,
+     "cost_gnk_eq": 437196.6950734461
+    }
+   }
+  },
+  "v2_ladder10": {
+   "recipients": 989,
+   "recipients_gnk": 847,
+   "recipients_money": 222,
+   "recipients_ge_1usd": 864,
+   "totals": {
+    "gnk": 13035023.789367089,
+    "usdt": 215604.71771815815,
+    "usdc": 22336.304736310598,
+    "dai": 30.403009852166555,
+    "eth": 34.382445792893755
+   },
+   "reserve": {
+    "usdt": 884150.874884,
+    "usdc": 647.736653
+   },
+   "stables_people_usd": 237971.4254643209,
+   "money_people_usd": 297423.7215832765,
+   "value_people_usd": 2159874.7459835387,
+   "n_eth": 91,
+   "n_token_transfers": 162,
+   "gas_eth": 0.0013043669453070002,
+   "gas_usd": 2.2554419295033745,
+   "eth_returned": 593.4350196834334,
+   "gnk_returned": 12900401.003716951,
+   "gnk_in_escrow": 98276.762424376,
+   "gnk_in_flight": 1509.7000000100002,
+   "gnk_need": 13036533.4893671,
+   "eth_usd": 1729.1468,
+   "eth_need": 683.704002784614,
+   "eth_gap": 90.26898310118054,
+   "eth_surplus": 0.0,
+   "gnk_gap": 37855.72322577225,
+   "cost_usd": 161497.1688251038,
+   "cost_gnk_eq": 1130295.1916432497,
+   "community_pool_now": 115520510.80211516,
+   "cost_share_pool": 0.009784368020839415,
+   "sensitivity_eth": {
+    "-10%": {
+     "eth_usd": 1556.2321200000001,
+     "eth_need": 755.8506975207,
+     "eth_gap": 162.41567783726657,
+     "eth_surplus": 0.0,
+     "gnk_gap": 37855.72322577225,
+     "cost_usd": 258165.3401983698,
+     "cost_gnk_eq": 1806861.6607835048
+    },
+    "+10%": {
+     "eth_usd": 1902.06148,
+     "eth_need": 624.6748889096344,
+     "eth_gap": 31.239869226200994,
+     "eth_surplus": 0.0,
+     "gnk_gap": 37855.72322577225,
+     "cost_usd": 64828.997451837735,
+     "cost_gnk_eq": 453728.7225029938
+    }
+   }
+  },
+  "v2_ladder0913": {
+   "recipients": 989,
+   "recipients_gnk": 847,
+   "recipients_money": 222,
+   "recipients_ge_1usd": 863,
+   "totals": {
+    "gnk": 13035063.865866182,
+    "usdt": 215072.5195885118,
+    "usdc": 22289.688041898215,
+    "dai": 30.403009852166555,
+    "eth": 34.35427489500928
+   },
+   "reserve": {
+    "usdt": 884150.874884,
+    "usdc": 647.736653
+   },
+   "stables_people_usd": 237392.61064026217,
+   "money_people_usd": 296796.19514128775,
+   "value_people_usd": 2159252.945692725,
+   "n_eth": 91,
+   "n_token_transfers": 162,
+   "gas_eth": 0.0013043669453070002,
+   "gas_usd": 2.2554419295033745,
+   "eth_returned": 593.4350196834334,
+   "gnk_returned": 12900401.003716951,
+   "gnk_in_escrow": 98276.762424376,
+   "gnk_in_flight": 1509.7000000100002,
+   "gnk_need": 13036573.565866193,
+   "eth_usd": 1729.1468,
+   "eth_need": 683.3410917570548,
+   "eth_gap": 89.90607207362132,
+   "eth_surplus": 0.0,
+   "gnk_gap": 37895.799724865574,
+   "cost_usd": 160875.36853429032,
+   "cost_gnk_eq": 1125943.3018610207,
+   "community_pool_now": 115520510.80211516,
+   "cost_share_pool": 0.009746696011323427,
+   "sensitivity_eth": {
+    "-10%": {
+     "eth_usd": 1556.2321200000001,
+     "eth_need": 755.4505931453991,
+     "eth_gap": 162.0155734619657,
+     "eth_surplus": 0.0,
+     "gnk_gap": 37895.799724865574,
+     "cost_usd": 257548.41106934927,
+     "cost_gnk_eq": 1802543.863554058
+    },
+    "+10%": {
+     "eth_usd": 1902.06148,
+     "eth_need": 624.3424088029548,
+     "eth_gap": 30.907389119521326,
+     "eth_surplus": 0.0,
+     "gnk_gap": 37895.799724865574,
+     "cost_usd": 64202.32599923128,
+     "cost_gnk_eq": 449342.740167983
+    }
+   }
+  }
+ },
+ "bridge_in_flight": {
+  "requests": 47,
+  "senders": 33,
+  "gnk_all": 1509.9600000149999,
+  "recipients": 27,
+  "gnk": 1509.7000000100002,
+  "after_attack_gnk": 33.9
+ },
+ "escrow_gnk_now": 98276.762424376,
+ "categories": {
+  "v1": {
+   "b_only": {
+    "owners": 58,
+    "paid": 0,
+    "gnk": 0.0,
+    "usdt": 0.0,
+    "usdc": 0.0,
+    "dai": 0.0,
+    "eth": 0.0,
+    "value_usd": 0.0,
+    "honest_wgnk": 1e-09,
+    "net_a_usd": 0.0,
+    "net_b_usd": 5321.509494839195
+   },
+   "buyer": {
+    "owners": 87,
+    "paid": 71,
+    "gnk": 7e-08,
+    "usdt": 25617.091841185786,
+    "usdc": 17155.951750061,
+    "dai": 22.329879,
+    "eth": 9.059484442,
+    "value_usd": 58460.552002790864,
+    "honest_wgnk": 7e-08,
+    "net_a_usd": 91741.18403106941,
+    "net_b_usd": -361.71990748135585
+   },
+   "hacker": {
+    "owners": 1,
+    "paid": 0,
+    "gnk": 0.0,
+    "usdt": 0.0,
+    "usdc": 0.0,
+    "dai": 0.0,
+    "eth": 0.0,
+    "value_usd": 0.0,
+    "honest_wgnk": 0.0,
+    "net_a_usd": -188343.16259148097,
+    "net_b_usd": 0.0
+   },
+   "holder": {
+    "owners": 848,
+    "paid": 761,
+    "gnk": 7092186.450227603,
+    "usdt": 0.0,
+    "usdc": 0.0,
+    "dai": 0.0,
+    "eth": 0.0,
+    "value_usd": 1013335.313606314,
+    "honest_wgnk": 7092483.506817416,
+    "net_a_usd": -1.089905,
+    "net_b_usd": 8807.133352620607
+   },
+   "holder_sold": {
+    "owners": 5,
+    "paid": 3,
+    "gnk": 8899.298846398066,
+    "usdt": 0.0,
+    "usdc": 0.0,
+    "dai": 0.0,
+    "eth": 0.0,
+    "value_usd": 1271.5364790080619,
+    "honest_wgnk": 11121.932180103999,
+    "net_a_usd": -742.9289996434683,
+    "net_b_usd": 0.0
+   },
+   "holder_traded": {
+    "owners": 84,
+    "paid": 72,
+    "gnk": 1129986.2309251148,
+    "usdt": 52533.98873312156,
+    "usdc": 4021.404822949336,
+    "dai": 4.555657,
+    "eth": 2.6749115416248683,
+    "value_usd": 222638.28830147386,
+    "honest_wgnk": 1189930.95172516,
+    "net_a_usd": 71768.7446817255,
+    "net_b_usd": 9358.68740405288
+   },
+   "lp": {
+    "owners": 39,
+    "paid": 20,
+    "gnk": 4801369.460389492,
+    "usdt": 134366.94454327968,
+    "usdc": 251.32427359264625,
+    "dai": 0.0,
+    "eth": 21.958082716183497,
+    "value_usd": 858609.1998645074,
+    "honest_wgnk": 4801397.684697332,
+    "net_a_usd": 157147.53428133446,
+    "net_b_usd": -21702.734932411087
+   },
+   "trader_loss": {
+    "owners": 22,
+    "paid": 21,
+    "gnk": 0.0,
+    "usdt": 877.3167324478479,
+    "usdc": 451.40195600000004,
+    "dai": 0.0,
+    "eth": 0.4674462388193972,
+    "value_usd": 2137.0018564744446,
+    "honest_wgnk": 0.0,
+    "net_a_usd": 2834.000367494611,
+    "net_b_usd": -343.2734908679086
+   },
+   "trader_profit": {
+    "owners": 122,
+    "paid": 0,
+    "gnk": 0.0,
+    "usdt": 0.0,
+    "usdc": 0.0,
+    "dai": 0.0,
+    "eth": 0.0,
+    "value_usd": 0.0,
+    "honest_wgnk": 5.12e-07,
+    "net_a_usd": -115707.37334111045,
+    "net_b_usd": -705.262111104127
+   },
+   "transfers": {
+    "owners": 84,
+    "paid": 0,
+    "gnk": 0.0,
+    "usdt": 0.0,
+    "usdc": 0.0,
+    "dai": 0.0,
+    "eth": 0.0,
+    "value_usd": 0.0,
+    "honest_wgnk": 4.877e-06,
+    "net_a_usd": -0.596131,
+    "net_b_usd": 0.021003
+   }
+  },
+  "v2": {
+   "b_only": {
+    "owners": 58,
+    "paid": 38,
+    "gnk": 0.0,
+    "usdt": 616.9945968302758,
+    "usdc": 251.309412254145,
+    "dai": 0.0,
+    "eth": 0.14530494227431354,
+    "value_usd": 1119.5575850422347,
+    "honest_wgnk": 1e-09,
+    "net_a_usd": 0.0,
+    "net_b_usd": 5321.509494839195
+   },
+   "buyer": {
+    "owners": 87,
+    "paid": 71,
+    "gnk": 7e-08,
+    "usdt": 25626.423845685786,
+    "usdc": 17180.951750061,
+    "dai": 22.329879,
+    "eth": 9.10575255125,
+    "value_usd": 58574.88836034256,
+    "honest_wgnk": 7e-08,
+    "net_a_usd": 91741.18403106941,
+    "net_b_usd": -361.71990748135585
+   },
+   "hacker": {
+    "owners": 1,
+    "paid": 0,
+    "gnk": 0.0,
+    "usdt": 0.0,
+    "usdc": 0.0,
+    "dai": 0.0,
+    "eth": 0.0,
+    "value_usd": 0.0,
+    "honest_wgnk": 0.0,
+    "net_a_usd": -188343.16259148097,
+    "net_b_usd": 0.0
+   },
+   "holder": {
+    "owners": 848,
+    "paid": 762,
+    "gnk": 7092186.450227603,
+    "usdt": 1195.5913676893285,
+    "usdc": 188.882189125,
+    "dai": 0.0,
+    "eth": 0.03350674068905545,
+    "value_usd": 1014777.7252365692,
+    "honest_wgnk": 7092483.506817416,
+    "net_a_usd": -1.089905,
+    "net_b_usd": 8807.133352620607
+   },
+   "holder_sold": {
+    "owners": 5,
+    "paid": 3,
+    "gnk": 8899.298846398066,
+    "usdt": 0.0,
+    "usdc": 0.0,
+    "dai": 0.0,
+    "eth": 0.0,
+    "value_usd": 1271.5364790080619,
+    "honest_wgnk": 11121.932180103999,
+    "net_a_usd": -742.9289996434683,
+    "net_b_usd": 0.0
+   },
+   "holder_traded": {
+    "owners": 84,
+    "paid": 72,
+    "gnk": 1132608.6564026158,
+    "usdt": 52921.430019787615,
+    "usdc": 4021.404822949336,
+    "dai": 8.073130852166557,
+    "eth": 2.6754848382321352,
+    "value_usd": 223404.93190136104,
+    "honest_wgnk": 1189930.95172516,
+    "net_a_usd": 71768.7446817255,
+    "net_b_usd": 9358.68740405288
+   },
+   "lp": {
+    "owners": 39,
+    "paid": 20,
+    "gnk": 4801369.460389492,
+    "usdt": 134378.02829824772,
+    "usdc": 251.3242736838841,
+    "dai": 0.0,
+    "eth": 21.958082716183497,
+    "value_usd": 858620.2836195668,
+    "honest_wgnk": 4801397.684697332,
+    "net_a_usd": 157147.53428133446,
+    "net_b_usd": -21702.734932411087
+   },
+   "trader_loss": {
+    "owners": 22,
+    "paid": 22,
+    "gnk": 0.0,
+    "usdt": 911.6958514314534,
+    "usdc": 451.401956,
+    "dai": 0.0,
+    "eth": 0.4674462388193972,
+    "value_usd": 2171.38097545805,
+    "honest_wgnk": 0.0,
+    "net_a_usd": 2834.000367494611,
+    "net_b_usd": -343.2734908679086
+   },
+   "trader_profit": {
+    "owners": 122,
+    "paid": 0,
+    "gnk": 0.0,
+    "usdt": 0.0,
+    "usdc": 0.0,
+    "dai": 0.0,
+    "eth": 0.0,
+    "value_usd": 0.0,
+    "honest_wgnk": 5.12e-07,
+    "net_a_usd": -115707.37334111045,
+    "net_b_usd": -705.262111104127
+   },
+   "transfers": {
+    "owners": 84,
+    "paid": 1,
+    "gnk": 0.0,
+    "usdt": 0.0105015,
+    "usdc": 0.0,
+    "dai": 0.0,
+    "eth": 0.0,
+    "value_usd": 0.0105015,
+    "honest_wgnk": 4.877e-06,
+    "net_a_usd": -0.596131,
+    "net_b_usd": 0.021003
+   }
+  },
+  "v3": {
+   "b_only": {
+    "owners": 58,
+    "paid": 46,
+    "gnk": 0.0,
+    "usdt": 2683.6045343400515,
+    "usdc": 1164.5687478198904,
+    "dai": 0.0,
+    "eth": 0.8097558726752355,
+    "value_usd": 5248.360058177533,
+    "honest_wgnk": 1e-09,
+    "net_a_usd": 0.0,
+    "net_b_usd": 5321.509494839195
+   },
+   "buyer": {
+    "owners": 87,
+    "paid": 71,
+    "gnk": 7e-08,
+    "usdt": 25739.404321185786,
+    "usdc": 17205.951750061,
+    "dai": 22.329879,
+    "eth": 9.244556879,
+    "value_usd": 58952.88189499762,
+    "honest_wgnk": 7e-08,
+    "net_a_usd": 91741.18403106941,
+    "net_b_usd": -361.71990748135585
+   },
+   "hacker": {
+    "owners": 1,
+    "paid": 0,
+    "gnk": 0.0,
+    "usdt": 0.0,
+    "usdc": 0.0,
+    "dai": 0.0,
+    "eth": 0.0,
+    "value_usd": 0.0,
+    "honest_wgnk": 0.0,
+    "net_a_usd": -188343.16259148097,
+    "net_b_usd": 0.0
+   },
+   "holder": {
+    "owners": 848,
+    "paid": 762,
+    "gnk": 7092186.450227603,
+    "usdt": 5834.415102170999,
+    "usdc": 1097.600552,
+    "dai": 0.0,
+    "eth": 0.384594276,
+    "value_usd": 1020932.3492221287,
+    "honest_wgnk": 7092483.506817416,
+    "net_a_usd": -1.089905,
+    "net_b_usd": 8807.133352620607
+   },
+   "holder_sold": {
+    "owners": 5,
+    "paid": 3,
+    "gnk": 8899.298846398066,
+    "usdt": 0.0,
+    "usdc": 0.0,
+    "dai": 0.0,
+    "eth": 0.0,
+    "value_usd": 1271.5364790080619,
+    "honest_wgnk": 11121.932180103999,
+    "net_a_usd": -742.9289996434683,
+    "net_b_usd": 0.0
+   },
+   "holder_traded": {
+    "owners": 84,
+    "paid": 72,
+    "gnk": 1135446.2056805596,
+    "usdt": 55459.25895819155,
+    "usdc": 4021.423307238336,
+    "dai": 13.502068000000001,
+    "eth": 2.676379732624868,
+    "value_usd": 226355.18619160232,
+    "honest_wgnk": 1189930.95172516,
+    "net_a_usd": 71768.7446817255,
+    "net_b_usd": 9358.68740405288
+   },
+   "lp": {
+    "owners": 39,
+    "paid": 20,
+    "gnk": 4801369.460389492,
+    "usdt": 134417.30653607319,
+    "usdc": 251.32427400720968,
+    "dai": 0.0,
+    "eth": 21.958082716183497,
+    "value_usd": 858659.5618577155,
+    "honest_wgnk": 4801397.684697332,
+    "net_a_usd": 157147.53428133446,
+    "net_b_usd": -21702.734932411087
+   },
+   "trader_loss": {
+    "owners": 22,
+    "paid": 22,
+    "gnk": 0.0,
+    "usdt": 1037.5404174478476,
+    "usdc": 451.401956,
+    "dai": 0.0,
+    "eth": 0.4674462388193972,
+    "value_usd": 2297.2255414744445,
+    "honest_wgnk": 0.0,
+    "net_a_usd": 2834.000367494611,
+    "net_b_usd": -343.2734908679086
+   },
+   "trader_profit": {
+    "owners": 122,
+    "paid": 0,
+    "gnk": 0.0,
+    "usdt": 0.0,
+    "usdc": 0.0,
+    "dai": 0.0,
+    "eth": 0.0,
+    "value_usd": 0.0,
+    "honest_wgnk": 5.12e-07,
+    "net_a_usd": -115707.37334111045,
+    "net_b_usd": -705.262111104127
+   },
+   "transfers": {
+    "owners": 84,
+    "paid": 1,
+    "gnk": 0.0,
+    "usdt": 0.021003,
+    "usdc": 0.0,
+    "dai": 0.0,
+    "eth": 0.0,
+    "value_usd": 0.021003,
+    "honest_wgnk": 4.877e-06,
+    "net_a_usd": -0.596131,
+    "net_b_usd": 0.021003
+   }
+  }
+ },
+ "checks": {
+  "v1_gnk_formula_max_diff": 0.0,
+  "v1_money_only_when_m_positive": true,
+  "v2_gnk_formula_max_diff": 0.0,
+  "v2_money_only_when_m_positive": true,
+  "v3_gnk_formula_max_diff": 0.0,
+  "v3_money_only_when_m_positive": true,
+  "monotonic_v1_le_v2": 0,
+  "monotonic_v2_le_v3": 0,
+  "gnk_monotonic_violations": 0,
+  "payout_monotonic_violations": 0,
+  "phi_in_0_1": true,
+  "no_b_identical": 0,
+  "third_party_attributed": {
+   "owners": 77,
+   "window_a_net_usd": 4050.4921783208383,
+   "window_b_net_usd": 2532.583336405653
+  },
+  "hacker_paid": 0.0,
+  "honest_total_wgnk_incl_pending_burns": 13094934.075425474,
+  "pending_pre_hack_burns_wgnk": 6048.587858011,
+  "supply_snap_contract": 13090977.714566352,
+  "payee_split_max_diff": 7.275957614183426e-12,
+  "payee_rows": 1350
+ },
+ "counts": {
+  "owners": 1293,
+  "owners_paid_v3": 984,
+  "payees": 997,
+  "groups": 45,
+  "differs": 90,
+  "same": 907,
+  "has_b": 174
+ }
+}

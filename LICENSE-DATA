@@ -1,0 +1,15 @@
+Data, texts and presentations in this repository — everything outside the `code/` and `verify/` folders — are licensed
+under the Creative Commons Attribution 4.0 International License (CC BY 4.0).
+
+You are free to share and adapt the material for any purpose, provided you give appropriate credit
+("Sergey Konyakov, WGNK bridge hack compensation draft, 2026"), provide a link to the licence and indicate if changes
+were made.
+
+Full text of the licence: https://creativecommons.org/licenses/by/4.0/legalcode
+Summary: https://creativecommons.org/licenses/by/4.0/
+
+On-chain data (transactions, logs, balances) is public by nature; the licence covers this compilation, the computed
+tables and the texts. The Gonka name and logo belong to their owners and are not covered by this licence. Court decisions
+and statutes quoted in `legal/` belong to their respective sources.
+
+The code in `code/` and `verify/` is licensed separately under the MIT License (see `LICENSE`).

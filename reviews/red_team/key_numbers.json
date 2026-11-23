@@ -1,0 +1,106 @@
+{
+ "totals_v1": {
+  "value_usd": 2155506.006198333,
+  "money_usd": 293426.4711907978,
+  "gnk": 13032423.78914789,
+  "usdt": 212449.19483965592,
+  "eth": 34.16205487819782,
+  "recipients": 938,
+  "top_up_usd": 170952.4337817705
+ },
+ "F1": {
+  "top1_value": 681701.5553088086,
+  "top1_share_value": 0.31626056867785113,
+  "top1_money": 126430.96399041149,
+  "top1_share_money": 0.4308778396077324,
+  "top1_share_usdt": 0.5951115234201481,
+  "top1_gnk": 3886258.093525961,
+  "top1_share_gnk": 0.29819918047493604,
+  "group3_value": 751841.6043529754,
+  "group3_share_value": 0.34880051467775713,
+  "group3_gnk": 4377158.093525961,
+  "group3_share_gnk": 0.3358667707821798,
+  "second_lp_value": 164565.52314552234,
+  "second_lp_eth": 21.518264168775247,
+  "second_lp_share_eth": 0.6298878754658337,
+  "second_lp_share_value": 0.07634658529009002,
+  "top5_share_value": 0.5055967880754025,
+  "top10_share_value": 0.6030472255278254,
+  "top20_share_value": 0.7059576891267727,
+  "lp_owners": 33,
+  "lp_share_value": 0.3983079968326427,
+  "lp_share_money": 0.5879943149116519,
+  "lp_value": 858555.2794895879,
+  "lp_money": 172533.09690477673,
+  "top1_money_share_of_topup": 0.7395680844872151
+ },
+ "F3": {
+  "owners": 142,
+  "usd": 96428.57710273808,
+  "share_of_topup": 0.564066711245738,
+  "ge_1000": 16,
+  "top10": 74689.72170526767,
+  "trader_profit_cat": 67929.58009465042,
+  "hacker_dump_proceeds": 188343.16259148097,
+  "gnk_deducted_from_holders": 62510.31425200763
+ },
+ "F6": {
+  "owners": 41,
+  "wgnk": 1280942.814156211,
+  "usd_at_p0": 183021.78001159034,
+  "refunded_owners": 24,
+  "refund_usd": 32432.98982152361,
+  "their_burns": 740934.2141562109,
+  "end_wallet_all": 20630541.813925542,
+  "end_wallet_refunded": 11663826.96302724
+ },
+ "F9": {
+  "owners": 22,
+  "proceeds_ignored": 2606.388512415542,
+  "refunded_owners": 4,
+  "their_proceeds": 1317.2240263276478
+ },
+ "F13": {
+  "derived from signature": {
+   "n": 789,
+   "gnk": 12234493.27541767,
+   "value": 2039604.7540765018,
+   "share": 0.946230818958546
+  },
+  "no outgoing tx - claim needed": {
+   "n": 123,
+   "gnk": 793171.1754078188,
+   "value": 115050.37571365108,
+   "share": 0.0533751507567496
+  },
+  "smart contract - claim needed": {
+   "n": 26,
+   "gnk": 4748.54349482,
+   "value": 849.3340375635441,
+   "share": 0.0003940302847043554
+  }
+ },
+ "options": {
+  "v1": {
+   "recipients": 938,
+   "value": 2155506.006198333,
+   "money": 293426.4711907978
+  },
+  "v2": {
+   "recipients": 977,
+   "value": 2159081.495554465,
+   "money": 296627.2670215546
+  },
+  "v3": {
+   "recipients": 984,
+   "value": 2173114.6999989836,
+   "money": 310255.0409394479
+  }
+ },
+ "window_b": {
+  "owners_net_loss": 97,
+  "usd": 18075.754006527008,
+  "v2_extra": 3575.4893561318545,
+  "v3_extra": 17608.69380065016
+ }
+}

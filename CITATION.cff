@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this dataset or calculation, please cite it as below."
+type: dataset
+title: "WGNK bridge hack (18 Nov 2026): three compensation options — open data for community review"
+authors:
+  - family-names: Konyakov
+    given-names: Sergey
+    alias: Konyakoff
+version: "0.1-draft"
+date-released: "2026-11-23"
+repository-code: "https://github.com/Konyakoff/gonka-wgnk-bridge-compensation"
+license: CC-BY-4.0
+abstract: >-
+  Draft proposal by a Gonka community member, not an official position of Gonka or its Core Team: per-address
+  compensation register under three options after the WGNK bridge hack of 18 November 2026, with the raw on-chain data,
+  the calculation code, a critique of the method and three independent reviews. Prepared with Claude Code (Fable 5.2).
+keywords: [gonka, wgnk, bridge, compensation, uniswap, open-data]

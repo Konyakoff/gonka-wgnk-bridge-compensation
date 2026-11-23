@@ -1,0 +1,4 @@
+# Versions the calculation was run and verified with (Python 3.11).
+pandas==2.3.3
+pyarrow==25.0.1
+openpyxl==3.1.5

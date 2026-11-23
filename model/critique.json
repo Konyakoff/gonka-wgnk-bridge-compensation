@@ -1,0 +1,593 @@
+{
+ "generated_utc": "2026-11-23T07:29:58.045099+00:00",
+ "option": "v1",
+ "p0": 0.1428805236181846,
+ "totals_v1": {
+  "gnk": 13032441.44038868,
+  "money": 294369.8350845062,
+  "value": 2156451.892110569,
+  "n": 938
+ },
+ "checks": {
+  "address_groups": {
+   "id": "address_groups",
+   "pairs": 67,
+   "pairs_merged": 58,
+   "pairs_via_hub": 9,
+   "groups": 45,
+   "addresses": 102,
+   "gnk": 425370.12469883624,
+   "money_usd": 54826.92489952213,
+   "share_gnk": 0.032639327530801475,
+   "share_money": 0.18625184500912836,
+   "payee_not_holder": {
+    "groups": 7,
+    "gnk": 288161.23622488376
+   },
+   "payee_not_payer": {
+    "groups": 11,
+    "usd": 16545.742232921126
+   },
+   "gain_netted_against_other_address": {
+    "groups": 2,
+    "honest_wgnk": 61863.935633267
+   },
+   "otc_checked": true,
+   "history_addresses": 104,
+   "otc_pairs": [
+    {
+     "addr_1": "0x0041949f5ada99c8e91b5080080e1ff72ff3a5c9",
+     "addr_2": "0xbc134b3096d32a2e9617640579dff7fb5299948a",
+     "entity_1": "0x0041949f5ada99c8e91b5080080e1ff72ff3a5c9",
+     "entity_2": "0x0041949f5ada99c8e91b5080080e1ff72ff3a5c9",
+     "merged": true,
+     "via_hub": false,
+     "transfers": 1,
+     "wgnk_1_to_2": 132758.598779365,
+     "wgnk_2_to_1": 0.0,
+     "first_block": 26444456,
+     "b0_1": 0.0,
+     "b0_2": 0.0,
+     "money_1_usd": -5070.505,
+     "money_2_usd": 0.0,
+     "money_between_usd_48h": 5245.35,
+     "counter_payment_usd": 5245.35,
+     "money_between_any_time_usd": 5245.35,
+     "hacker": false
+    },
+    {
+     "addr_1": "0x43e13851cdf0ad797c180c11c73a5b738a3fce20",
+     "addr_2": "0x9111f2945220040d906719051f8fe94dc5304475",
+     "entity_1": "0x43e13851cdf0ad797c180c11c73a5b738a3fce20",
+     "entity_2": "0x43e13851cdf0ad797c180c11c73a5b738a3fce20",
+     "merged": true,
+     "via_hub": false,
+     "transfers": 1,
+     "wgnk_1_to_2": 0.0,
+     "wgnk_2_to_1": 379.093574383,
+     "first_block": 26444223,
+     "b0_1": 0.0,
+     "b0_2": 0.0,
+     "money_1_usd": 0.0,
+     "money_2_usd": -10.0,
+     "money_between_usd_48h": 1288.0083020000002,
+     "counter_payment_usd": 938.0083020000001,
+     "money_between_any_time_usd": 1288.0083020000002,
+     "hacker": false
+    },
+    {
+     "addr_1": "0x339989d747f94f8db486f20e50e95390a883b094",
+     "addr_2": "0x4fa15a23bc907a05980d024ad296c749756ed86e",
+     "entity_1": "0x339989d747f94f8db486f20e50e95390a883b094",
+     "entity_2": "0x339989d747f94f8db486f20e50e95390a883b094",
+     "merged": true,
+     "via_hub": false,
+     "transfers": 1,
+     "wgnk_1_to_2": 200.0,
+     "wgnk_2_to_1": 0.0,
+     "first_block": 26449212,
+     "b0_1": 0.0,
+     "b0_2": 20039.935633267,
+     "money_1_usd": -9.829367999999988,
+     "money_2_usd": 1247.276583,
+     "money_between_usd_48h": 600.0,
+     "counter_payment_usd": 300.0,
+     "money_between_any_time_usd": 600.0,
+     "hacker": false
+    },
+    {
+     "addr_1": "0x5242ad5aad8eb8be05a278d4d938ef33c05b2b7f",
+     "addr_2": "0xd077b66fd0cbdf3c6d9add2ef6f17a8d420b6306",
+     "entity_1": "0x5242ad5aad8eb8be05a278d4d938ef33c05b2b7f",
+     "entity_2": "0x5242ad5aad8eb8be05a278d4d938ef33c05b2b7f",
+     "merged": true,
+     "via_hub": false,
+     "transfers": 2,
+     "wgnk_1_to_2": 4134.648077497,
+     "wgnk_2_to_1": 4134.648077497,
+     "first_block": 26443773,
+     "b0_1": 0.0,
+     "b0_2": 0.0,
+     "money_1_usd": 0.0,
+     "money_2_usd": 39.15779792267821,
+     "money_between_usd_48h": 176.63472533671825,
+     "counter_payment_usd": 176.63472533671825,
+     "money_between_any_time_usd": 176.63472533671825,
+     "hacker": false
+    },
+    {
+     "addr_1": "0x1c11241222f3a739e5712c555cf1503be8b988e4",
+     "addr_2": "0x5ce61b3420c262b73e2cfb5bacea9543aa0e6cbd",
+     "entity_1": "0x1c11241222f3a739e5712c555cf1503be8b988e4",
+     "entity_2": "0x1c11241222f3a739e5712c555cf1503be8b988e4",
+     "merged": true,
+     "via_hub": false,
+     "transfers": 3,
+     "wgnk_1_to_2": 7540.0,
+     "wgnk_2_to_1": 7550.0,
+     "first_block": 26456018,
+     "b0_1": 0.0,
+     "b0_2": 0.0,
+     "money_1_usd": -51.016793445145815,
+     "money_2_usd": 0.0,
+     "money_between_usd_48h": 157.59211205337505,
+     "counter_payment_usd": 157.59211205337505,
+     "money_between_any_time_usd": 157.59211205337505,
+     "hacker": false
+    },
+    {
+     "addr_1": "0xcc2ba2b5e06f9d938546b8ceaf2c5f81be704907",
+     "addr_2": "0xfad497df04ab47a93dd946ee1b545e740a5b3039",
+     "entity_1": "0xcc2ba2b5e06f9d938546b8ceaf2c5f81be704907",
+     "entity_2": "0xcc2ba2b5e06f9d938546b8ceaf2c5f81be704907",
+     "merged": true,
+     "via_hub": false,
+     "transfers": 2,
+     "wgnk_1_to_2": 0.0,
+     "wgnk_2_to_1": 4411.595050259,
+     "first_block": 26449365,
+     "b0_1": 0.0,
+     "b0_2": 0.0,
+     "money_1_usd": 5.108644042902839,
+     "money_2_usd": -209.7799907275,
+     "money_between_usd_48h": 146.46674605858,
+     "counter_payment_usd": 146.46674605858,
+     "money_between_any_time_usd": 244.12345005858,
+     "hacker": false
+    },
+    {
+     "addr_1": "0xb96e251ece7e8eb0d4903d8b486027d2a28a94e1",
+     "addr_2": "0xf5b14661f696a6cc55083f2a1b9af8b06294a96f",
+     "entity_1": "0xb96e251ece7e8eb0d4903d8b486027d2a28a94e1",
+     "entity_2": "0xb96e251ece7e8eb0d4903d8b486027d2a28a94e1",
+     "merged": true,
+     "via_hub": false,
+     "transfers": 2,
+     "wgnk_1_to_2": 6334.92709516,
+     "wgnk_2_to_1": 500.0,
+     "first_block": 26447410,
+     "b0_1": 0.0,
+     "b0_2": 0.0,
+     "money_1_usd": -130.223685,
+     "money_2_usd": -57.122999000000014,
+     "money_between_usd_48h": 139.249615402211,
+     "counter_payment_usd": 139.249615402211,
+     "money_between_any_time_usd": 139.249615402211,
+     "hacker": false
+    },
+    {
+     "addr_1": "0x4422bfd3397300c853add791cb1eb3b922292cc2",
+     "addr_2": "0x5ece1060e462d803d1c8f6b66e10118f06e3089b",
+     "entity_1": "0x4422bfd3397300c853add791cb1eb3b922292cc2",
+     "entity_2": "0x4422bfd3397300c853add791cb1eb3b922292cc2",
+     "merged": true,
+     "via_hub": false,
+     "transfers": 2,
+     "wgnk_1_to_2": 11939.76791515,
+     "wgnk_2_to_1": 11939.76791515,
+     "first_block": 26443718,
+     "b0_1": 0.0,
+     "b0_2": 0.0,
+     "money_1_usd": 0.0,
+     "money_2_usd": -2100.0,
+     "money_between_usd_48h": 88.33600000000001,
+     "counter_payment_usd": 88.33600000000001,
+     "money_between_any_time_usd": 88.33600000000001,
+     "hacker": false
+    },
+    {
+     "addr_1": "0x8c974c3743c008d29aed24e27e1f404ffbcb26d3",
+     "addr_2": "0xfb068ca3e15fb0dddf8c3af7e1b169af619fd877",
+     "entity_1": "0x8c974c3743c008d29aed24e27e1f404ffbcb26d3",
+     "entity_2": "0x8c974c3743c008d29aed24e27e1f404ffbcb26d3",
+     "merged": true,
+     "via_hub": false,
+     "transfers": 2,
+     "wgnk_1_to_2": 758.317385303,
+     "wgnk_2_to_1": 758.317385303,
+     "first_block": 26443791,
+     "b0_1": 0.0,
+     "b0_2": 0.0,
+     "money_1_usd": 0.0,
+     "money_2_usd": 88.015332,
+     "money_between_usd_48h": 35.69934534501512,
+     "counter_payment_usd": 35.69934534501512,
+     "money_between_any_time_usd": 35.69934534501512,
+     "hacker": false
+    },
+    {
+     "addr_1": "0x48a1dc5b61d4a3eea29fbcf9ffab3bd87c38c56a",
+     "addr_2": "0x98e97971306f837b65580944792532a6748a5cf9",
+     "entity_1": "0x48a1dc5b61d4a3eea29fbcf9ffab3bd87c38c56a",
+     "entity_2": "0x48a1dc5b61d4a3eea29fbcf9ffab3bd87c38c56a",
+     "merged": true,
+     "via_hub": false,
+     "transfers": 2,
+     "wgnk_1_to_2": 10000.0,
+     "wgnk_2_to_1": 10000.0,
+     "first_block": 26443652,
+     "b0_1": 0.0,
+     "b0_2": 0.0,
+     "money_1_usd": 0.0,
+     "money_2_usd": 1779.579225,
+     "money_between_usd_48h": 8.8336,
+     "counter_payment_usd": 8.8336,
+     "money_between_any_time_usd": 8.8336,
+     "hacker": false
+    },
+    {
+     "addr_1": "0x24cbf0feb93c200487f5ee4bb27495000145c4b5",
+     "addr_2": "0xf91395985887892886c2b7c23ebeec71a8e58ca0",
+     "entity_1": "0x24cbf0feb93c200487f5ee4bb27495000145c4b5",
+     "entity_2": "0x24cbf0feb93c200487f5ee4bb27495000145c4b5",
+     "merged": true,
+     "via_hub": false,
+     "transfers": 1,
+     "wgnk_1_to_2": 0.0,
+     "wgnk_2_to_1": 120.466890752,
+     "first_block": 26443728,
+     "b0_1": 0.0,
+     "b0_2": 0.0,
+     "money_1_usd": 6.91514,
+     "money_2_usd": -1.0,
+     "money_between_usd_48h": 10.100786498776,
+     "counter_payment_usd": 8.334066498776,
+     "money_between_any_time_usd": 10.100786498776,
+     "hacker": false
+    }
+   ],
+   "otc_pairs_n": 11,
+   "otc_counter_usd": 7244.504512694676,
+   "pairs_with_any_money_48h": 21,
+   "hubs": {
+    "0xd46223b86687774ce138d964702852cea8612e33": 4,
+    "0x3ee18b2214aff97000d974cf647e7c347e8fa585": 5
+   }
+  },
+  "supply": {
+   "id": "supply",
+   "supply_at_snapshot": 13090977.71456635,
+   "owner_wallets": 9106055.81445675,
+   "pools": {
+    "0xdbc0edbced03c87a7f287f9949e01c012511f117": 8887.924895822,
+    "0x000000000004444c5dc75cb358380d2e3de08a90": 335893.498803274,
+    "0x203ee836d417cf944133bbdd2c62b4bc7388c55d": 3639174.077344344
+   },
+   "lp_positions_wgnk": 3982829.673110713,
+   "pool_minus_positions": 1125.8279327270575,
+   "infra_balances": {
+    "0x972a7a92d92796a98801a8818bcf91f1648f2f68": 259.5,
+    "0x9008d19f58aabd9ed0d60971565aa8510560ab41": 706.899066161
+   },
+   "unassigned": -5.669562597176991e-10,
+   "negative_balances": 0
+  },
+  "bridge_in_flight": {
+   "id": "bridge_in_flight",
+   "available": true,
+   "requests": 47,
+   "gnk": 1509.9600000149999,
+   "senders": 33,
+   "senders_ge_half_gnk": 27,
+   "gnk_ge_half": 1509.7000000100002,
+   "before_attack": {
+    "n": 39,
+    "gnk": 1476.0600000149998
+   },
+   "after_attack": {
+    "n": 8,
+    "gnk": 33.9
+   },
+   "escrow_now_gnk": 98276.762424376,
+   "usd_at_p0": 215.7438754446572
+  },
+  "untracked_tokens": {
+   "id": "untracked_tokens",
+   "rows": 0
+  },
+  "profit_kept": {
+   "id": "profit_kept",
+   "owners": 131,
+   "usd": 96605.86409315879,
+   "no_prehack_wgnk": {
+    "owners": 127,
+    "usd": 93555.01836970929
+   },
+   "holders_above_holdings": {
+    "owners": 4,
+    "usd": 3050.845723449501
+   },
+   "top1_usd": 23260.457007,
+   "top5_usd": 61500.23312807161,
+   "top10_share": 0.7841350290122249,
+   "window_a_usd": 89282.18209380964,
+   "share_of_top_up": 0.6111441690050978,
+   "top_up_usd": 158073.77210262307
+  },
+  "concentration": {
+   "id": "concentration",
+   "recipients": 938,
+   "top1": {
+    "gnk": 3886258.093525961,
+    "money_usd": 126430.96399041149,
+    "value_usd": 681701.5553088086,
+    "share_gnk": 0.29819877659162974,
+    "share_money": 0.42949700995727474,
+    "share_value": 0.31612184709653396,
+    "category": "lp"
+   },
+   "top10_share_value": 0.6027827105265279,
+   "top10_money_share": 0.8195793361848573,
+   "median_value_usd": 55.28200196209863,
+   "below_100_usd": 552,
+   "lp": {
+    "owners": 14,
+    "gnk": 4801369.460389493,
+    "money_usd": 172335.6930061037,
+    "share_gnk": 0.3684167300771157,
+    "share_money": 0.5854393774981409
+   },
+   "totals": {
+    "gnk": 13032441.44038868,
+    "money": 294369.8350845062,
+    "value": 2156451.892110569,
+    "n": 938
+   }
+  },
+  "cutoff": {
+   "id": "cutoff",
+   "note": "владельцы без позиций ликвидности; вариант 1: убытки после границы не возмещаются, прибыль вычитается",
+   "at_warning": {
+    "money_usd": 122374.48620458342,
+    "gnk": 8231082.746854683,
+    "owners_money": 154
+   },
+   "at_blockaid_18_28": {
+    "money_usd": 14616.776803395722,
+    "gnk": 8236542.721610129,
+    "owners_money": 54,
+    "delta_money_usd": -107757.70940118769,
+    "delta_gnk": 5459.974755445495
+   },
+   "at_media_22_30": {
+    "money_usd": 121277.86862335194,
+    "gnk": 8231965.110677146,
+    "owners_money": 148,
+    "delta_money_usd": -1096.617581231476,
+    "delta_gnk": 882.3638224629685
+   },
+   "at_hack_start": {
+    "money_usd": 0.0,
+    "gnk": 8236542.721610129,
+    "owners_money": 0,
+    "delta_money_usd": -122374.48620458342,
+    "delta_gnk": 5459.974755445495
+   },
+   "buys_window_a": {
+    "n": 741,
+    "usd": 209566.04553346089,
+    "owners": 274
+   },
+   "buys_until_blockaid": {
+    "n": 251,
+    "usd": 52859.86650905143,
+    "owners": 125
+   },
+   "buys_until_media": {
+    "n": 711,
+    "usd": 207584.69269055937,
+    "owners": 268
+   },
+   "buys_first_5_min_after_warning": {
+    "n": 5,
+    "usd": 103.317712,
+    "owners": 5
+   },
+   "freeze_ts": 1795408200.0
+  },
+  "after_freeze": {
+   "id": "after_freeze",
+   "refunded_owners_still_holding": 118,
+   "wgnk_held_by_refunded": 11676273.50618898,
+   "refund_usd_of_those": 285685.9102983582,
+   "post_hack_wgnk_in_wallets": 11570440.57141018,
+   "swaps": 0,
+   "synced_to_block": 26475970,
+   "collected_at": "2026-11-23T06:41:21.350680+00:00"
+  },
+  "p0": {
+   "id": "p0",
+   "p0": 0.1428805236181846,
+   "alternatives": {
+    "vwap_1h": {
+     "price": 0.14314177815012571,
+     "swaps": 13,
+     "delta_gnk": 101.65920731135702,
+     "gnk_value_of_payout_usd": 1865486.841414621
+    },
+    "vwap_6h": {
+     "price": 0.14201265623888026,
+     "swaps": 54,
+     "delta_gnk": -340.3890714125009,
+     "gnk_value_of_payout_usd": 1850771.6262272552
+    },
+    "vwap_24h": {
+     "price": 0.1428805236181846,
+     "swaps": 118,
+     "delta_gnk": 0.0,
+     "gnk_value_of_payout_usd": 1862082.0570260624
+    },
+    "vwap_72h": {
+     "price": 0.14729299681129152,
+     "swaps": 327,
+     "delta_gnk": 1668.5886132909945,
+     "gnk_value_of_payout_usd": 1919587.3555225132
+    },
+    "vwap_7d": {
+     "price": 0.1529674378696337,
+     "swaps": 816,
+     "delta_gnk": 3672.89599275199,
+     "gnk_value_of_payout_usd": 1993539.176322295
+    },
+    "vwap_30d": {
+     "price": 0.16639125064378685,
+     "swaps": 2425,
+     "delta_gnk": 7870.18365616005,
+     "gnk_value_of_payout_usd": 2168484.2302081874
+    },
+    "last_trade": {
+     "price": 0.143149728093,
+     "swaps": null,
+     "delta_gnk": 104.74686680060404,
+     "gnk_value_of_payout_usd": 1865590.4485795847
+    }
+   },
+   "owners_affected": 31,
+   "deducted_gnk_at_p0": 62481.868183637635
+  },
+  "recipients_quality": {
+   "id": "recipients_quality",
+   "by_kind": {
+    "derived": {
+     "n": 789,
+     "gnk": 12234521.721486038
+    },
+    "no_outgoing_tx": {
+     "n": 123,
+     "gnk": 793171.1754078186
+    },
+    "contract": {
+     "n": 26,
+     "gnk": 4748.543494819999
+    }
+   }
+  },
+  "passive_after_warning": {
+   "id": "passive_after_warning",
+   "lp_owners_with_money_at_warning": 19,
+   "money_in_positions_at_warning_usd": 1231.2112178991295,
+   "money_in_positions_at_freeze_usd": 1002.9900053448727,
+   "lp_loss_after_warning_usd": 669.3720730361202,
+   "positions_open_at_warning": 30,
+   "lp_owners_differ_between_options": 3
+  },
+  "nft_transfers": {
+   "id": "nft_transfers",
+   "v3_changed": [],
+   "v4_changed": [
+    {
+     "pos": "v4:327836",
+     "snap": "0xf5e560de074e3610e7daab19d9a093b9e279bc37",
+     "t1": "0xf5e560de074e3610e7daab19d9a093b9e279bc37",
+     "end": "0x9df59ccf737746743b6a1789a954982926d7d0c1"
+    }
+   ],
+   "v3_positions": 68
+  },
+  "pending_burns": {
+   "id": "pending_burns",
+   "owners": 39,
+   "wgnk": 1280942.2041562109,
+   "usd_at_p0": 183021.69285447092,
+   "top1_wgnk": 500000.0,
+   "owners_also_refunded": 24,
+   "refund_usd_of_those": 32432.98982152361,
+   "pre_hack_pending_wgnk": 6048.587858011,
+   "pre_hack_pending_owners": 4,
+   "pre_hack_pending_old_wgnk": 5007.028,
+   "escrow_now_gnk": 98276.762424376
+  },
+  "fixes": {
+   "id": "fixes",
+   "available": true,
+   "options": {
+    "v1": {
+     "cost_before": 170952.4337817705,
+     "cost_after": 158073.77210262307,
+     "share_before": 0.010357218880972836,
+     "share_after": 0.009576960215131304,
+     "gnk_gap_before": 132011.99060335942,
+     "gnk_gap_after": 35273.37424736457,
+     "recipients_before": 938,
+     "recipients_after": 948,
+     "gnk_delta": 28.446068370714784,
+     "usdt_delta": 946.1470103789179,
+     "usdc_delta": 0.8998615213349694,
+     "dai_delta": 0.0,
+     "eth_delta": -0.002129939570053807
+    },
+    "v2": {
+     "cost_before": 174528.4370441152,
+     "cost_after": 161562.7375004128,
+     "share_before": 0.010573872412530376,
+     "share_after": 0.009788340524224639,
+     "gnk_gap_before": 134634.41608085856,
+     "gnk_gap_after": 37895.799724865574,
+     "recipients_before": 977,
+     "recipients_after": 989,
+     "gnk_delta": 28.44606837257743,
+     "usdt_delta": 947.3197180279822,
+     "usdc_delta": -87.1682903733199,
+     "dai_delta": 0.0,
+     "eth_delta": -0.0022245315536792987
+    },
+    "v3": {
+     "cost_before": 188561.7703331556,
+     "cost_after": 175339.69097717138,
+     "share_before": 0.011424087301484667,
+     "share_after": 0.010623022543750145,
+     "gnk_gap_before": 137471.96535880305,
+     "gnk_gap_after": 40733.349002810064,
+     "recipients_before": 984,
+     "recipients_after": 997,
+     "gnk_delta": 28.44606837257743,
+     "usdt_delta": 1002.6043797613529,
+     "usdc_delta": -399.257012766102,
+     "dai_delta": 0.0,
+     "eth_delta": -0.001993547570052101
+    }
+   },
+   "owners_changed_v1": 5,
+   "money_delta_v1_usd": 943.3638927084888,
+   "money_delta_v3_usd": 599.9002295938343,
+   "owners_changed_any": 9,
+   "rerouted": {
+    "groups_gnk": 12,
+    "gnk": 247997.94472998971,
+    "groups_money": 13,
+    "usd": 16609.865231919423,
+    "groups_any": 22
+   },
+   "escrow_gnk": 98276.762424376,
+   "in_flight": {
+    "requests": 47,
+    "senders": 33,
+    "gnk_all": 1509.9600000149999,
+    "recipients": 27,
+    "gnk": 1509.7000000100002,
+    "after_attack_gnk": 33.9
+   },
+   "groups": 45
+  }
+ }
+}

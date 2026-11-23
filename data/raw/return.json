@@ -1,0 +1,198 @@
+{
+ "collected_at": "2026-11-23T04:56:30.429289+00:00",
+ "statement_ts": 1795116791,
+ "statement_time": "2026-11-19T19:33:11+00:00",
+ "statement_block": 26451248,
+ "warn_post_id": 2123210678211318257,
+ "warn_ts_from_id_ms": 1795047847689,
+ "warn_ts": 1795047847,
+ "warn_time": "2026-11-19T00:24:07+00:00",
+ "t1_block": 26445519,
+ "freeze_ts": 1795408200,
+ "freeze_time": "2026-11-23T04:30:00+00:00",
+ "cutoff_block": 26475449,
+ "cutoff_time": "2026-11-23T04:30:00+00:00",
+ "gradient": [
+  {
+   "until_ts": 1795052141,
+   "until": "2026-11-19T01:35:41+00:00",
+   "k": 0.5
+  },
+  {
+   "until_ts": 1795089780,
+   "until": "2026-11-19T12:03:00+00:00",
+   "k": 0.25
+  },
+  {
+   "until_ts": 1795134247,
+   "until": "2026-11-20T00:24:07+00:00",
+   "k": 0.125
+  },
+  {
+   "until_ts": null,
+   "until": "later",
+   "k": 0.0
+  }
+ ],
+ "gradient_blocks": [
+  26445818,
+  26448155,
+  26452697
+ ],
+ "eth_tx_internal": [],
+ "eth_tx": {
+  "from": "0xb916f815dd02aea48957f3679a7534dbd2238060",
+  "to": "0x1d806d0e3c7df74c14a49d58de98c189614e1768",
+  "value_eth": 593.4350196834333,
+  "block": 26447692,
+  "status": "0x1",
+  "input": "0x",
+  "logs": [
+   {
+    "address": "0x1d806d0e3c7df74c14a49d58de98c189614e1768",
+    "topics": [
+     "0x3d0ce9bfc3ed7d6862dbb28b2dea94561fe714a1b4d019aa8af39730d1ad7c3d",
+     "0x000000000000000000000000b916f815dd02aea48957f3679a7534dbd2238060"
+    ],
+    "data": "0x0000000000000000000000000000000000000000000000202b90b63fa3fcefc8"
+   }
+  ]
+ },
+ "admin_eth": {
+  "before_return": 0.0002,
+  "after_return": 593.4352196834334,
+  "now": 593.4352196834334
+ },
+ "admin_code": "0x6080604052",
+ "admin_owners": [
+  "0x3857b3d0addc3692979327662d22f0ddedaca5ad",
+  "0x82981d2b3132869c779b1154173be526c84e4315",
+  "0x09f9d7fddebe8c84276e4ae1b82847a5548073b2"
+ ],
+ "admin_threshold": 2,
+ "eth_usd_now": 1729.1468,
+ "eth_usd_at_return": 1806.084,
+ "gas_price_gwei": 0.101895707,
+ "hacker_eth_now": {
+  "0x6650a1cb0c3b970a0e4ced26984fe06db7844d80": 2.3893941248e-06,
+  "0xde356f654e9b6ebcc7e3af869e5168885293434a": 0.001093825182795428
+ },
+ "gnk_txs": {
+  "FA6CBC63F0950B508AE25A4B92EE85F57777D3A4793328CD56B2978FF5BB2EEA": {
+   "tx_hash": "FA6CBC63F0950B508AE25A4B92EE85F57777D3A4793328CD56B2978FF5BB2EEA",
+   "height": 7132869,
+   "tx_index": 0,
+   "timestamp": "2026-11-19T09:02:52.039Z",
+   "success": true,
+   "primary_msg_type": "/cosmos.distribution.v1beta1.MsgFundCommunityPool",
+   "signer_address": "gonka1gk48e8tz9y85j9fpeyh6gww3rks98ht2d6s26v",
+   "fee_ngonka": 1000000,
+   "summary": "MsgFundCommunityPool",
+   "to_address": null,
+   "amount_ngonka": null,
+   "amount_denom": "",
+   "inner_types": null,
+   "msg_types": [
+    "/cosmos.distribution.v1beta1.MsgFundCommunityPool"
+   ],
+   "address_role": null,
+   "code": 0,
+   "gas_used": 98677,
+   "gas_wanted": 1000000,
+   "memo": null,
+   "raw_log": null,
+   "messages": [
+    {
+     "kind": "fund_community_pool",
+     "type_url": "/cosmos.distribution.v1beta1.MsgFundCommunityPool",
+     "fields": {
+      "amount": "900401004716951ngonka",
+      "depositor": "gonka1gk48e8tz9y85j9fpeyh6gww3rks98ht2d6s26v",
+      "payouts": [
+       {
+        "amount": 900401004716951,
+        "denom": "ngonka",
+        "to": "gonka1jv65s3grqf6v6jl3dp4t6c9t9rk99cd8h2rzwa"
+       }
+      ]
+     },
+     "raw": {},
+     "nested": null
+    }
+   ],
+   "events_summary": {}
+  },
+  "B879F1076D8A4C5BDECA0E5EABAFFA21FB0DF1C30A0AA4D6882F0054AC252A6B": {
+   "tx_hash": "B879F1076D8A4C5BDECA0E5EABAFFA21FB0DF1C30A0AA4D6882F0054AC252A6B",
+   "height": 7132924,
+   "tx_index": 0,
+   "timestamp": "2026-11-19T09:07:44.162Z",
+   "success": true,
+   "primary_msg_type": "/cosmos.distribution.v1beta1.MsgFundCommunityPool",
+   "signer_address": "gonka1qekvfdempdq5vvqz26sts79zh6zv85su34p6u3",
+   "fee_ngonka": 1000000,
+   "summary": "MsgFundCommunityPool",
+   "to_address": null,
+   "amount_ngonka": null,
+   "amount_denom": "",
+   "inner_types": null,
+   "msg_types": [
+    "/cosmos.distribution.v1beta1.MsgFundCommunityPool"
+   ],
+   "address_role": null,
+   "code": 0,
+   "gas_used": 111990,
+   "gas_wanted": 1000000,
+   "memo": null,
+   "raw_log": null,
+   "messages": [
+    {
+     "kind": "fund_community_pool",
+     "type_url": "/cosmos.distribution.v1beta1.MsgFundCommunityPool",
+     "fields": {
+      "amount": "11999999999000000ngonka",
+      "depositor": "gonka1qekvfdempdq5vvqz26sts79zh6zv85su34p6u3",
+      "payouts": [
+       {
+        "amount": 11999999999000000,
+        "denom": "ngonka",
+        "to": "gonka1jv65s3grqf6v6jl3dp4t6c9t9rk99cd8h2rzwa"
+       }
+      ]
+     },
+     "raw": {},
+     "nested": null
+    }
+   ],
+   "events_summary": {}
+  }
+ },
+ "community_pool": {
+  "before": {
+   "height": 7132868,
+   "gnk": 102620109.7983982,
+   "error": null,
+   "note": "value read on 2026-11-20 (historical state at this height has since been pruned by the node)"
+  },
+  "now": {
+   "height": null,
+   "gnk": 115520510.80211516,
+   "error": null
+  }
+ },
+ "distribution_balance": {
+  "before": {
+   "height": 7132868,
+   "gnk": 105256029.52172986,
+   "note": "value read on 2026-11-20 (historical state at this height has since been pruned by the node)"
+  },
+  "now": {
+   "height": null,
+   "gnk": 118156430.5254468
+  }
+ },
+ "hacker_gnk_now": {
+  "gonka1gk48e8tz9y85j9fpeyh6gww3rks98ht2d6s26v": 0.0,
+  "gonka1qekvfdempdq5vvqz26sts79zh6zv85su34p6u3": 0.0
+ }
+}

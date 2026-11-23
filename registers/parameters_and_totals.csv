@@ -1,0 +1,43 @@
+parameter,value
+p0_usd_per_wgnk,0.1428805236181846
+attack_start_block_T0,26443607
+b0_snapshot_block,26443612
+warning_time_utc,2026-11-19T00:24:07Z
+last_block_window_A_T1,26445519
+data_freeze_time_utc,2026-11-23T04:30:00Z
+last_block_window_B_T2,26475449
+eth_usd_at_calculation,1729.1468
+gradient_step_1_until_unix_utc_and_k,1795052141 / 0.5
+gradient_step_2_until_unix_utc_and_k,1795089780 / 0.25
+gradient_step_3_until_unix_utc_and_k,1795134247 / 0.125
+gradient_step_4_until_unix_utc_and_k,1795408200 / 0.0
+v1_recipients,948
+v1_total_gnk,13032441.440388681
+v1_total_usdt,213395.34185003486
+v1_total_usdc,21880.082802602978
+v1_total_dai,26.885536
+v1_total_eth,34.15992493862777
+v1_protocol_top_up_usd,158073.77210262307
+v1_top_up_gnk_from_pool,35273.37424736457
+v1_top_up_eth,88.50254583380627
+v1_share_of_community_pool,0.009576960215131304
+v2_recipients,989
+v2_total_gnk,13035063.865866182
+v2_total_usdt,215650.17448117223
+v2_total_usdc,22345.274404073363
+v2_total_dai,30.403009852166555
+v2_total_eth,34.3855780274484
+v2_protocol_top_up_usd,161562.7375004128
+v2_top_up_gnk_from_pool,37895.799724865574
+v2_top_up_eth,90.30359122359891
+v2_share_of_community_pool,0.009788340524224639
+v3_recipients,997
+v3_total_gnk,13037901.415144127
+v3_total_usdt,225171.55087240943
+v3_total_usdc,24192.270587126433
+v3_total_dai,35.831947
+v3_total_eth,35.540815715303005
+v3_protocol_top_up_usd,175339.69097717138
+v3_top_up_gnk_from_pool,40733.349002810064
+v3_top_up_eth,98.03660900446835
+v3_share_of_community_pool,0.010623022543750145

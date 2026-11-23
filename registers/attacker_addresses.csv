@@ -1,0 +1,5 @@
+chain,address,role
+Ethereum,0x6650a1cb0c3b970a0e4ced26984fe06db7844d80,"получатель вывода резервов и выпуска 22 млн WGNK, подписант submitGroupKey"
+Ethereum,0xde356f654e9b6ebcc7e3af869e5168885293434a,"приёмник 606,7 ETH хакера, депозиты в роутер THORChain"
+Gonka,gonka1gk48e8tz9y85j9fpeyh6gww3rks98ht2d6s26v,получил 13 000 000 GNK по сжиганию WGNK (MsgBridgeExchange)
+Gonka,gonka1qekvfdempdq5vvqz26sts79zh6zv85su34p6u3,получил 12 000 000 GNK от хакера тремя переводами

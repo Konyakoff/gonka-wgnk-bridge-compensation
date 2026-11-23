@@ -1,0 +1,2687 @@
+{
+ "$schema": "https://datapackage.org/profiles/2.0/datapackage.json",
+ "name": "gonka-wgnk-bridge-compensation",
+ "title": "WGNK bridge hack (18 Nov 2026): three compensation options — open data for community review",
+ "description": "Draft for community discussion, not an official position of Gonka or its Core Team. Column meanings: DATA_DICTIONARY.md.",
+ "version": "0.1-draft",
+ "created": "2026-11-23",
+ "homepage": "https://github.com/Konyakoff/gonka-wgnk-bridge-compensation",
+ "licenses": [
+  {
+   "name": "CC-BY-4.0",
+   "path": "https://creativecommons.org/licenses/by/4.0/",
+   "title": "Creative Commons Attribution 4.0 (data and texts)"
+  },
+  {
+   "name": "MIT",
+   "path": "https://opensource.org/license/mit",
+   "title": "MIT License (code)"
+  }
+ ],
+ "contributors": [
+  {
+   "title": "Sergey Konyakov",
+   "roles": [
+    "creator"
+   ],
+   "path": "https://github.com/Konyakoff"
+  }
+ ],
+ "resources": [
+  {
+   "name": "data-raw-db-bridge-events-parquet",
+   "path": "data/raw/db/bridge_events.parquet",
+   "bytes": 386572,
+   "hash": "sha256:80e94dcedf7cf018c5d41c02a1844f70ac4c22831d0e07ea3242aadb7961c121",
+   "format": "parquet",
+   "schema": {
+    "fields": [
+     {
+      "name": "kind",
+      "type": "string"
+     },
+     {
+      "name": "block_number",
+      "type": "integer"
+     },
+     {
+      "name": "block_time",
+      "type": "string"
+     },
+     {
+      "name": "tx_hash",
+      "type": "string"
+     },
+     {
+      "name": "log_index",
+      "type": "integer"
+     },
+     {
+      "name": "epoch_id",
+      "type": "string"
+     },
+     {
+      "name": "request_id",
+      "type": "string"
+     },
+     {
+      "name": "recipient",
+      "type": "string"
+     },
+     {
+      "name": "from_addr",
+      "type": "string"
+     },
+     {
+      "name": "amount_raw",
+      "type": "string"
+     },
+     {
+      "name": "amount_wgnk",
+      "type": "string"
+     },
+     {
+      "name": "origin_eoa",
+      "type": "string"
+     },
+     {
+      "name": "tx_to",
+      "type": "string"
+     },
+     {
+      "name": "gonka_address",
+      "type": "string"
+     },
+     {
+      "name": "link_status",
+      "type": "string"
+     }
+    ]
+   }
+  },
+  {
+   "name": "data-raw-db-bridge-requests-status-parquet",
+   "path": "data/raw/db/bridge_requests_status.parquet",
+   "bytes": 154715,
+   "hash": "sha256:2b50eca6595e5a10480218d37af0145ad692a9884578ba2a8bc8185f721081b5",
+   "format": "parquet",
+   "schema": {
+    "fields": [
+     {
+      "name": "height",
+      "type": "integer"
+     },
+     {
+      "name": "block_time",
+      "type": "string"
+     },
+     {
+      "name": "tx_hash",
+      "type": "string"
+     },
+     {
+      "name": "signer",
+      "type": "string"
+     },
+     {
+      "name": "success",
+      "type": "boolean"
+     },
+     {
+      "name": "dest",
+      "type": "string"
+     },
+     {
+      "name": "gnk",
+      "type": "number"
+     }
+    ]
+   }
+  },
+  {
+   "name": "data-raw-db-lp-events-parquet",
+   "path": "data/raw/db/lp_events.parquet",
+   "bytes": 97386,
+   "hash": "sha256:55e4abb0020beaf824b0ccea11a74f2cfa813e73825d77579be07ee1a63a63fd",
+   "format": "parquet",
+   "schema": {
+    "fields": [
+     {
+      "name": "event",
+      "type": "string"
+     },
+     {
+      "name": "pool_id",
+      "type": "string"
+     },
+     {
+      "name": "pool_version",
+      "type": "string"
+     },
+     {
+      "name": "block_number",
+      "type": "integer"
+     },
+     {
+      "name": "block_time",
+      "type": "string"
+     },
+     {
+      "name": "tx_hash",
+      "type": "string"
+     },
+     {
+      "name": "log_index",
+      "type": "integer"
+     },
+     {
+      "name": "owner",
+      "type": "string"
+     },
+     {
+      "name": "origin_eoa",
+      "type": "string"
+     },
+     {
+      "name": "tx_to",
+      "type": "string"
+     },
+     {
+      "name": "tick_lower",
+      "type": "integer"
+     },
+     {
+      "name": "tick_upper",
+      "type": "integer"
+     },
+     {
+      "name": "liquidity_delta",
+      "type": "string"
+     },
+     {
+      "name": "amount0_raw",
+      "type": "string"
+     },
+     {
+      "name": "amount1_raw",
+      "type": "string"
+     },
+     {
+      "name": "amount_wgnk",
+      "type": "string"
+     },
+     {
+      "name": "amount_usdt",
+      "type": "string"
+     },
+     {
+      "name": "log_data",
+      "type": "string"
+     },
+     {
+      "name": "topics",
+      "type": "string"
+     }
+    ]
+   }
+  },
+  {
+   "name": "data-raw-db-pools-parquet",
+   "path": "data/raw/db/pools.parquet",
+   "bytes": 8945,
+   "hash": "sha256:ce2abd6fa2b11f7d71efd14ccb92b4e85f978a1b8f670fe539f1296c3e6b2357",
+   "format": "parquet",
+   "schema": {
+    "fields": [
+     {
+      "name": "pool_id",
+      "type": "string"
+     },
+     {
+      "name": "version",
+      "type": "string"
+     },
+     {
+      "name": "fee_bps",
+      "type": "integer"
+     },
+     {
+      "name": "label",
+      "type": "string"
+     },
+     {
+      "name": "contract_address",
+      "type": "string"
+     },
+     {
+      "name": "token0",
+      "type": "string"
+     },
+     {
+      "name": "token1",
+      "type": "string"
+     },
+     {
+      "name": "dec0",
+      "type": "integer"
+     },
+     {
+      "name": "dec1",
+      "type": "integer"
+     },
+     {
+      "name": "created_block",
+      "type": "string"
+     },
+     {
+      "name": "logs_last_block",
+      "type": "integer"
+     },
+     {
+      "name": "enabled",
+      "type": "boolean"
+     },
+     {
+      "name": "updated_at",
+      "type": "string"
+     }
+    ]
+   }
+  },
+  {
+   "name": "data-raw-db-swaps-parquet",
+   "path": "data/raw/db/swaps.parquet",
+   "bytes": 1923262,
+   "hash": "sha256:a5536afdb2fbca45d5aa4252428f836341dcc3652805b37f7cc23413f735f0b6",
+   "format": "parquet",
+   "schema": {
+    "fields": [
+     {
+      "name": "pool_id",
+      "type": "string"
+     },
+     {
+      "name": "pool_version",
+      "type": "string"
+     },
+     {
+      "name": "block_number",
+      "type": "integer"
+     },
+     {
+      "name": "block_time",
+      "type": "string"
+     },
+     {
+      "name": "tx_hash",
+      "type": "string"
+     },
+     {
+      "name": "log_index",
+      "type": "integer"
+     },
+     {
+      "name": "tx_index",
+      "type": "integer"
+     },
+     {
+      "name": "sender",
+      "type": "string"
+     },
+     {
+      "name": "recipient",
+      "type": "string"
+     },
+     {
+      "name": "origin_eoa",
+      "type": "string"
+     },
+     {
+      "name": "tx_to",
+      "type": "string"
+     },
+     {
+      "name": "router_label",
+      "type": "string"
+     },
+     {
+      "name": "amount_wgnk",
+      "type": "string"
+     },
+     {
+      "name": "amount_usdt",
+      "type": "string"
+     },
+     {
+      "name": "direction",
+      "type": "string"
+     },
+     {
+      "name": "price_usdt",
+      "type": "string"
+     },
+     {
+      "name": "usd_value",
+      "type": "string"
+     },
+     {
+      "name": "sqrt_price_x96",
+      "type": "string"
+     },
+     {
+      "name": "tick",
+      "type": "integer"
+     },
+     {
+      "name": "tx_status",
+      "type": "integer"
+     }
+    ]
+   }
+  },
+  {
+   "name": "data-raw-db-swaps-after-freeze-parquet",
+   "path": "data/raw/db/swaps_after_freeze.parquet",
+   "bytes": 636,
+   "hash": "sha256:8b67fb02ed63cfcf022800db6620efeab96f816e75acdf7d89e6642268562a66",
+   "format": "parquet",
+   "schema": {
+    "fields": []
+   }
+  },
+  {
+   "name": "data-raw-eth-balances-end-json-gz",
+   "path": "data/raw/eth/balances_end.json.gz",
+   "bytes": 59392,
+   "hash": "sha256:e947f7a245948a3654defde91f302da512b2099d4a429b59255fcd7ec403d31d",
+   "format": "json",
+   "compression": "gz",
+   "mediatype": "application/json"
+  },
+  {
+   "name": "data-raw-eth-block-ts-json-gz",
+   "path": "data/raw/eth/block_ts.json.gz",
+   "bytes": 8253,
+   "hash": "sha256:62509fc605e9f465a50f46473763c2d35d5bba1aad44846b03b683bf78c7e294",
+   "format": "json",
+   "compression": "gz",
+   "mediatype": "application/json"
+  },
+  {
+   "name": "data-raw-eth-eth-usd-json-gz",
+   "path": "data/raw/eth/eth_usd.json.gz",
+   "bytes": 1746,
+   "hash": "sha256:55ec7a4859eaced9ebdb0b0894b003821ad393802155652e1a0b7a641e358f67",
+   "format": "json",
+   "compression": "gz",
+   "mediatype": "application/json"
+  },
+  {
+   "name": "data-raw-eth-forensics-json-gz",
+   "path": "data/raw/eth/forensics.json.gz",
+   "bytes": 97089,
+   "hash": "sha256:caac01bcb36bd67bca8fe2dacb635d87d58b73d62d711c850ccf625f879629ae",
+   "format": "json",
+   "compression": "gz",
+   "mediatype": "application/json"
+  },
+  {
+   "name": "data-raw-eth-lp-extra-json-gz",
+   "path": "data/raw/eth/lp_extra.json.gz",
+   "bytes": 13331,
+   "hash": "sha256:33f1acdbd613bf2a2e0e50d4513fadd50ed55d6038b25a0a88cd773b10acd60b",
+   "format": "json",
+   "compression": "gz",
+   "mediatype": "application/json"
+  },
+  {
+   "name": "data-raw-eth-lp-fees-json-gz",
+   "path": "data/raw/eth/lp_fees.json.gz",
+   "bytes": 4686,
+   "hash": "sha256:a6d2c6f9c8aedc4002b2062ad81afa08c0579929a8cea6f7c72e13b5b483bc14",
+   "format": "json",
+   "compression": "gz",
+   "mediatype": "application/json"
+  },
+  {
+   "name": "data-raw-eth-otc-history-json-gz",
+   "path": "data/raw/eth/otc_history.json.gz",
+   "bytes": 170618,
+   "hash": "sha256:93360398c3142aa54469198c45c3f67bb1cce45a417967a6618609cc90e96fac",
+   "format": "json",
+   "compression": "gz",
+   "mediatype": "application/json"
+  },
+  {
+   "name": "data-raw-eth-post-internal-json-gz",
+   "path": "data/raw/eth/post_internal.json.gz",
+   "bytes": 113768,
+   "hash": "sha256:e0729495a1cace26abf15f6600d0fe952de31a39323023c17fb076d72ac97067",
+   "format": "json",
+   "compression": "gz",
+   "mediatype": "application/json"
+  },
+  {
+   "name": "data-raw-eth-post-receipts-json-gz",
+   "path": "data/raw/eth/post_receipts.json.gz",
+   "bytes": 1686447,
+   "hash": "sha256:0fd264abbb28a34fd8c6fee296cad4351a3c0898031449ce03848d78df081e12",
+   "format": "json",
+   "compression": "gz",
+   "mediatype": "application/json"
+  },
+  {
+   "name": "data-raw-eth-post-txs-json-gz",
+   "path": "data/raw/eth/post_txs.json.gz",
+   "bytes": 240042,
+   "hash": "sha256:77539432653b8464a118cfaa3c03e9f752221aae3062b7ad80abeb5ab5d41cad",
+   "format": "json",
+   "compression": "gz",
+   "mediatype": "application/json"
+  },
+  {
+   "name": "data-raw-eth-twins-json-gz",
+   "path": "data/raw/eth/twins.json.gz",
+   "bytes": 168121,
+   "hash": "sha256:eb5d841bb93b17e9364afe9bf9bea6fca91097d50cef2408d0bb484c464e8fed",
+   "format": "json",
+   "compression": "gz",
+   "mediatype": "application/json"
+  },
+  {
+   "name": "data-raw-eth-twins-bridge-check-json-gz",
+   "path": "data/raw/eth/twins_bridge_check.json.gz",
+   "bytes": 65709,
+   "hash": "sha256:4f398c089a8f167497a980d324b2eb9c523c98db50e50494d716122c5bd063f8",
+   "format": "json",
+   "compression": "gz",
+   "mediatype": "application/json"
+  },
+  {
+   "name": "data-raw-eth-v4-extra-json-gz",
+   "path": "data/raw/eth/v4_extra.json.gz",
+   "bytes": 4037,
+   "hash": "sha256:5a36ef131167d7e062fbdb2179110ff5c4d1ca9e8ff034166e41cdf29ff8aa23",
+   "format": "json",
+   "compression": "gz",
+   "mediatype": "application/json"
+  },
+  {
+   "name": "data-raw-eth-v4-modify-parquet",
+   "path": "data/raw/eth/v4_modify.parquet",
+   "bytes": 29630,
+   "hash": "sha256:fb9d8ec11c96e339867764055ee98a825e57e85f8ff06a751c72028a379e1705",
+   "format": "parquet",
+   "schema": {
+    "fields": [
+     {
+      "name": "pool_id",
+      "type": "string"
+     },
+     {
+      "name": "block_number",
+      "type": "integer"
+     },
+     {
+      "name": "tx_hash",
+      "type": "string"
+     },
+     {
+      "name": "log_index",
+      "type": "integer"
+     },
+     {
+      "name": "sender",
+      "type": "string"
+     },
+     {
+      "name": "tick_lower",
+      "type": "integer"
+     },
+     {
+      "name": "tick_upper",
+      "type": "integer"
+     },
+     {
+      "name": "liquidity_delta",
+      "type": "string"
+     },
+     {
+      "name": "salt",
+      "type": "string"
+     }
+    ]
+   }
+  },
+  {
+   "name": "data-raw-eth-wgnk-transfers-parquet",
+   "path": "data/raw/eth/wgnk_transfers.parquet",
+   "bytes": 1869443,
+   "hash": "sha256:12ee5ae6286cb857eb5a82ad0e8d2637a1f445437c047c6b329a513c9e504c0d",
+   "format": "parquet",
+   "schema": {
+    "fields": [
+     {
+      "name": "block_number",
+      "type": "integer"
+     },
+     {
+      "name": "time",
+      "type": "integer"
+     },
+     {
+      "name": "tx_hash",
+      "type": "string"
+     },
+     {
+      "name": "log_index",
+      "type": "integer"
+     },
+     {
+      "name": "tx_index",
+      "type": "integer"
+     },
+     {
+      "name": "from_addr",
+      "type": "string"
+     },
+     {
+      "name": "to_addr",
+      "type": "string"
+     },
+     {
+      "name": "value_raw",
+      "type": "string"
+     },
+     {
+      "name": "value_wgnk",
+      "type": "number"
+     }
+    ]
+   }
+  },
+  {
+   "name": "data-raw-extra-json",
+   "path": "data/raw/extra.json",
+   "bytes": 800,
+   "hash": "sha256:4a5036dee3d1aee65ffc3f5aa321e0a268528e2d7db0b21a4cc909246d3728d1",
+   "format": "json",
+   "mediatype": "application/json"
+  },
+  {
+   "name": "data-raw-gonka-gonka-json-gz",
+   "path": "data/raw/gonka/gonka.json.gz",
+   "bytes": 4936562,
+   "hash": "sha256:0f642a0b0e56b920efefdd8fd74b34b048e7717ec54eb191e45cb875eb44ed43",
+   "format": "json",
+   "compression": "gz",
+   "mediatype": "application/json"
+  },
+  {
+   "name": "data-raw-gonka-reserve-holders-json-gz",
+   "path": "data/raw/gonka/reserve_holders.json.gz",
+   "bytes": 6308,
+   "hash": "sha256:3e35c8b3748e5822e491271ad0bf127809c88d5383b538c485f7057b47e1597e",
+   "format": "json",
+   "compression": "gz",
+   "mediatype": "application/json"
+  },
+  {
+   "name": "data-raw-meta-json",
+   "path": "data/raw/meta.json",
+   "bytes": 775,
+   "hash": "sha256:85dfc68ee69f7c834ef375d641d5466a337c0941a9322f27615993e9310702e0",
+   "format": "json",
+   "mediatype": "application/json"
+  },
+  {
+   "name": "data-raw-return-json",
+   "path": "data/raw/return.json",
+   "bytes": 5321,
+   "hash": "sha256:606deea9de8cd511855bfdcd0fbfbc867000daedc22252ef5f3c18754dd3fe4f",
+   "format": "json",
+   "mediatype": "application/json"
+  },
+  {
+   "name": "data-sources-publications-timeline-csv",
+   "path": "data/sources/publications_timeline.csv",
+   "bytes": 20832,
+   "hash": "sha256:ee8ccbd5b2e390f7b2743dd3e545634063bd9dd225e018113dc3082ebe043a39",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "schema": {
+    "fields": [
+     {
+      "name": "no",
+      "type": "integer"
+     },
+     {
+      "name": "time_utc",
+      "type": "string"
+     },
+     {
+      "name": "hours_after_hack",
+      "type": "number"
+     },
+     {
+      "name": "source",
+      "type": "string"
+     },
+     {
+      "name": "venue_type",
+      "type": "string"
+     },
+     {
+      "name": "url",
+      "type": "string"
+     },
+     {
+      "name": "what_was_said_ru",
+      "type": "string"
+     },
+     {
+      "name": "legal_meaning_ru",
+      "type": "string"
+     },
+     {
+      "name": "how_time_was_established_ru",
+      "type": "string"
+     }
+    ]
+   }
+  },
+  {
+   "name": "data-sources-x-post-times-from-ids-json",
+   "path": "data/sources/x_post_times_from_ids.json",
+   "bytes": 626,
+   "hash": "sha256:245861970f04dc6fa025d4c4367f6982de0336193c096b16a0523a8954c50e80",
+   "format": "json",
+   "mediatype": "application/json"
+  },
+  {
+   "name": "legal-legal-research-md",
+   "path": "legal/LEGAL_RESEARCH.md",
+   "bytes": 12140,
+   "hash": "sha256:55003f823c928dead3d57b68d874cdda400c38cdb3330194b2e4f0f4658f0754",
+   "format": "md",
+   "mediatype": "text/markdown"
+  },
+  {
+   "name": "legal-case-law-csv",
+   "path": "legal/case_law.csv",
+   "bytes": 152462,
+   "hash": "sha256:9fdd1d27f98de4c99ce8e017b19f48125420908fb17ab8c7cb423ad950ea0b5e",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "schema": {
+    "fields": [
+     {
+      "name": "pass",
+      "type": "string"
+     },
+     {
+      "name": "id",
+      "type": "string"
+     },
+     {
+      "name": "name",
+      "type": "string"
+     },
+     {
+      "name": "citation",
+      "type": "string"
+     },
+     {
+      "name": "jurisdiction",
+      "type": "string"
+     },
+     {
+      "name": "year",
+      "type": "integer"
+     },
+     {
+      "name": "forum",
+      "type": "string"
+     },
+     {
+      "name": "rule_or_holding",
+      "type": "string"
+     },
+     {
+      "name": "relevance_to_gonka",
+      "type": "string"
+     },
+     {
+      "name": "quote",
+      "type": "string"
+     },
+     {
+      "name": "urls",
+      "type": "string"
+     },
+     {
+      "name": "verification",
+      "type": "string"
+     },
+     {
+      "name": "supports",
+      "type": "string"
+     }
+    ]
+   }
+  },
+  {
+   "name": "legal-pass1-crypto-incidents-md",
+   "path": "legal/pass1_crypto_incidents.md",
+   "bytes": 92389,
+   "hash": "sha256:838ff84a5349dcad9517fb8d13244a76858c010f302a769e6b43421c1def42c2",
+   "format": "md",
+   "mediatype": "text/markdown"
+  },
+  {
+   "name": "legal-pass2-traditional-finance-md",
+   "path": "legal/pass2_traditional_finance.md",
+   "bytes": 61791,
+   "hash": "sha256:50290283b523a3fb58d5be08e9adbd047a78c133a05a15b1e25e8977533d0b86",
+   "format": "md",
+   "mediatype": "text/markdown"
+  },
+  {
+   "name": "model-checks-reconciliation-json",
+   "path": "model/checks_reconciliation.json",
+   "bytes": 2319,
+   "hash": "sha256:ec6346b8d949175f18cc1aa7d5100400d3d2ab937096ae3d1e65ec9165f3d925",
+   "format": "json",
+   "mediatype": "application/json"
+  },
+  {
+   "name": "model-critique-address-groups-csv",
+   "path": "model/critique/address_groups.csv",
+   "bytes": 23963,
+   "hash": "sha256:e1f7f03bda61041ffa4382cb407b83623158ebc02d7dd983b55515c007f44363",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "schema": {
+    "fields": [
+     {
+      "name": "owner_key",
+      "type": "string"
+     },
+     {
+      "name": "addresses",
+      "type": "string"
+     },
+     {
+      "name": "n",
+      "type": "integer"
+     },
+     {
+      "name": "honest_wgnk",
+      "type": "number"
+     },
+     {
+      "name": "b0_by_address",
+      "type": "string"
+     },
+     {
+      "name": "net_spent_by_address",
+      "type": "string"
+     },
+     {
+      "name": "top_holder",
+      "type": "string"
+     },
+     {
+      "name": "top_payer",
+      "type": "string"
+     },
+     {
+      "name": "key_is_holder",
+      "type": "boolean"
+     },
+     {
+      "name": "key_is_payer",
+      "type": "boolean"
+     },
+     {
+      "name": "members_with_gain",
+      "type": "integer"
+     },
+     {
+      "name": "members_with_b0",
+      "type": "integer"
+     },
+     {
+      "name": "v1_pay_gnk",
+      "type": "number"
+     },
+     {
+      "name": "v1_money_usd",
+      "type": "number"
+     },
+     {
+      "name": "v3_money_usd",
+      "type": "number"
+     }
+    ]
+   }
+  },
+  {
+   "name": "model-critique-bridge-requests-not-minted-csv",
+   "path": "model/critique/bridge_requests_not_minted.csv",
+   "bytes": 9633,
+   "hash": "sha256:955d37ec43d6ed76f9fd26f0bad37a093ca00f5ab7544c1f1874260f1ac96276",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "schema": {
+    "fields": [
+     {
+      "name": "gonka_sender",
+      "type": "string"
+     },
+     {
+      "name": "eth_destination",
+      "type": "string"
+     },
+     {
+      "name": "gnk",
+      "type": "number"
+     },
+     {
+      "name": "gonka_height",
+      "type": "integer"
+     },
+     {
+      "name": "time_utc",
+      "type": "string"
+     },
+     {
+      "name": "gonka_tx",
+      "type": "string"
+     },
+     {
+      "name": "after_attack",
+      "type": "boolean"
+     },
+     {
+      "name": "already_in_register",
+      "type": "boolean"
+     }
+    ]
+   }
+  },
+  {
+   "name": "model-critique-pending-burns-after-attack-csv",
+   "path": "model/critique/pending_burns_after_attack.csv",
+   "bytes": 6643,
+   "hash": "sha256:f9e0b137ee79be7fba9b84d50ccfab870cf1b4cd740ff4ce61fe782132e6ca1f",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "schema": {
+    "fields": [
+     {
+      "name": "entity",
+      "type": "string"
+     },
+     {
+      "name": "addresses",
+      "type": "string"
+     },
+     {
+      "name": "category",
+      "type": "string"
+     },
+     {
+      "name": "honest_wgnk",
+      "type": "number"
+     },
+     {
+      "name": "burn_pending_post",
+      "type": "number"
+     },
+     {
+      "name": "net_a_usd",
+      "type": "number"
+     },
+     {
+      "name": "net_b_usd",
+      "type": "number"
+     },
+     {
+      "name": "v1_pay_gnk",
+      "type": "number"
+     },
+     {
+      "name": "v1_money_usd",
+      "type": "number"
+     }
+    ]
+   }
+  },
+  {
+   "name": "model-critique-plain-transfer-pairs-csv",
+   "path": "model/critique/plain_transfer_pairs.csv",
+   "bytes": 37908,
+   "hash": "sha256:bd91b9dd8aa1be8590037bbfccbc9aeef157db9c8b276c9b2ebe258e0d9a3e18",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "schema": {
+    "fields": [
+     {
+      "name": "addr_1",
+      "type": "string"
+     },
+     {
+      "name": "addr_2",
+      "type": "string"
+     },
+     {
+      "name": "entity_1",
+      "type": "string"
+     },
+     {
+      "name": "entity_2",
+      "type": "string"
+     },
+     {
+      "name": "merged",
+      "type": "boolean"
+     },
+     {
+      "name": "via_hub",
+      "type": "boolean"
+     },
+     {
+      "name": "transfers",
+      "type": "integer"
+     },
+     {
+      "name": "wgnk_1_to_2",
+      "type": "number"
+     },
+     {
+      "name": "wgnk_2_to_1",
+      "type": "number"
+     },
+     {
+      "name": "first_block",
+      "type": "integer"
+     },
+     {
+      "name": "b0_1",
+      "type": "number"
+     },
+     {
+      "name": "b0_2",
+      "type": "number"
+     },
+     {
+      "name": "money_1_usd",
+      "type": "number"
+     },
+     {
+      "name": "money_2_usd",
+      "type": "number"
+     },
+     {
+      "name": "money_between_usd_48h",
+      "type": "number"
+     },
+     {
+      "name": "counter_payment_usd",
+      "type": "number"
+     },
+     {
+      "name": "money_between_any_time_usd",
+      "type": "number"
+     },
+     {
+      "name": "payments",
+      "type": "string"
+     },
+     {
+      "name": "hacker",
+      "type": "boolean"
+     }
+    ]
+   }
+  },
+  {
+   "name": "model-critique-profit-kept-csv",
+   "path": "model/critique/profit_kept.csv",
+   "bytes": 21057,
+   "hash": "sha256:c7aa3e9047796e9396584e1c81a318934fa9fe2034eb3e915834d073e4e58a5d",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "schema": {
+    "fields": [
+     {
+      "name": "entity",
+      "type": "string"
+     },
+     {
+      "name": "addresses",
+      "type": "string"
+     },
+     {
+      "name": "category",
+      "type": "string"
+     },
+     {
+      "name": "honest_wgnk",
+      "type": "number"
+     },
+     {
+      "name": "net_a_usd",
+      "type": "number"
+     },
+     {
+      "name": "net_b_usd",
+      "type": "number"
+     },
+     {
+      "name": "profit",
+      "type": "number"
+     },
+     {
+      "name": "a_n_tx",
+      "type": "number"
+     },
+     {
+      "name": "b_n_tx",
+      "type": "number"
+     }
+    ]
+   }
+  },
+  {
+   "name": "model-critique-top-recipients-csv",
+   "path": "model/critique/top_recipients.csv",
+   "bytes": 1851,
+   "hash": "sha256:ade809b4914d3998966d276993fd5238be1dab1a3308b0f166585542af59bdb5",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "schema": {
+    "fields": [
+     {
+      "name": "entity",
+      "type": "string"
+     },
+     {
+      "name": "addresses",
+      "type": "string"
+     },
+     {
+      "name": "category",
+      "type": "string"
+     },
+     {
+      "name": "honest_wgnk",
+      "type": "number"
+     },
+     {
+      "name": "lp_w_before",
+      "type": "number"
+     },
+     {
+      "name": "lp_u_before",
+      "type": "number"
+     },
+     {
+      "name": "v1_pay_gnk",
+      "type": "number"
+     },
+     {
+      "name": "v1_money_usd",
+      "type": "number"
+     },
+     {
+      "name": "v1_value_usd",
+      "type": "number"
+     }
+    ]
+   }
+  },
+  {
+   "name": "model-critique-json",
+   "path": "model/critique.json",
+   "bytes": 17429,
+   "hash": "sha256:a08dc8112ccb791bae964f47d4e2e182086f9f43d1af1dd5753d4576fbf6f006",
+   "format": "json",
+   "mediatype": "application/json"
+  },
+  {
+   "name": "model-lp-positions-csv",
+   "path": "model/lp_positions.csv",
+   "bytes": 155230,
+   "hash": "sha256:b5d2fb1349f80ccc2274991996b02ae2e7c904f04d169db8538efc37dd1d2aeb",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "schema": {
+    "fields": [
+     {
+      "name": "pos",
+      "type": "string"
+     },
+     {
+      "name": "version",
+      "type": "string"
+     },
+     {
+      "name": "pool_id",
+      "type": "string"
+     },
+     {
+      "name": "pair",
+      "type": "string"
+     },
+     {
+      "name": "tick_lower",
+      "type": "integer"
+     },
+     {
+      "name": "tick_upper",
+      "type": "integer"
+     },
+     {
+      "name": "state",
+      "type": "string"
+     },
+     {
+      "name": "liquidity",
+      "type": "integer"
+     },
+     {
+      "name": "owner",
+      "type": "string"
+     },
+     {
+      "name": "entity",
+      "type": "string"
+     },
+     {
+      "name": "wgnk",
+      "type": "number"
+     },
+     {
+      "name": "money_usd",
+      "type": "number"
+     },
+     {
+      "name": "money_token",
+      "type": "string"
+     },
+     {
+      "name": "money_amount",
+      "type": "number"
+     },
+     {
+      "name": "unpriced",
+      "type": "string"
+     }
+    ]
+   }
+  },
+  {
+   "name": "model-payees-csv",
+   "path": "model/payees.csv",
+   "bytes": 1064642,
+   "hash": "sha256:998993e906d7458e738ff57e3a409f8e993388dbb4b385600f32a2745ace9cff",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "schema": {
+    "fields": [
+     {
+      "name": "entity",
+      "type": "string"
+     },
+     {
+      "name": "addresses",
+      "type": "string"
+     },
+     {
+      "name": "is_hacker",
+      "type": "boolean"
+     },
+     {
+      "name": "b0_wallet",
+      "type": "number"
+     },
+     {
+      "name": "b0_pending_burn",
+      "type": "number"
+     },
+     {
+      "name": "lp_w_before",
+      "type": "number"
+     },
+     {
+      "name": "lp_u_before",
+      "type": "number"
+     },
+     {
+      "name": "lp_u_t1",
+      "type": "number"
+     },
+     {
+      "name": "lp_u_end",
+      "type": "number"
+     },
+     {
+      "name": "honest_wgnk",
+      "type": "number"
+     },
+     {
+      "name": "g_credited",
+      "type": "number"
+     },
+     {
+      "name": "wgnk_end_wallet",
+      "type": "number"
+     },
+     {
+      "name": "burn_pending_post",
+      "type": "number"
+     },
+     {
+      "name": "net_a_usd",
+      "type": "number"
+     },
+     {
+      "name": "net_b_usd",
+      "type": "number"
+     },
+     {
+      "name": "k_eff",
+      "type": "number"
+     },
+     {
+      "name": "k_eff_exp",
+      "type": "number"
+     },
+     {
+      "name": "k_eff_ladder10",
+      "type": "number"
+     },
+     {
+      "name": "a_w_in",
+      "type": "number"
+     },
+     {
+      "name": "a_usd_out",
+      "type": "number"
+     },
+     {
+      "name": "a_w_out",
+      "type": "number"
+     },
+     {
+      "name": "a_usd_in",
+      "type": "number"
+     },
+     {
+      "name": "a_lp_usd",
+      "type": "number"
+     },
+     {
+      "name": "a_n_tx",
+      "type": "number"
+     },
+     {
+      "name": "b_w_in",
+      "type": "number"
+     },
+     {
+      "name": "b_usd_out",
+      "type": "number"
+     },
+     {
+      "name": "b_w_out",
+      "type": "number"
+     },
+     {
+      "name": "b_usd_in",
+      "type": "number"
+     },
+     {
+      "name": "b_lp_usd",
+      "type": "number"
+     },
+     {
+      "name": "b_n_tx",
+      "type": "number"
+     },
+     {
+      "name": "a_via_usd",
+      "type": "number"
+     },
+     {
+      "name": "b_via_usd",
+      "type": "number"
+     },
+     {
+      "name": "b_first_ts",
+      "type": "number"
+     },
+     {
+      "name": "b_last_ts",
+      "type": "number"
+     },
+     {
+      "name": "has_b",
+      "type": "boolean"
+     },
+     {
+      "name": "category",
+      "type": "string"
+     },
+     {
+      "name": "v1_phi",
+      "type": "number"
+     },
+     {
+      "name": "v1_pay_gnk",
+      "type": "number"
+     },
+     {
+      "name": "v1_pay_usdt",
+      "type": "number"
+     },
+     {
+      "name": "v1_pay_usdc",
+      "type": "number"
+     },
+     {
+      "name": "v1_pay_dai",
+      "type": "number"
+     },
+     {
+      "name": "v1_pay_eth",
+      "type": "number"
+     },
+     {
+      "name": "v1_m_usd",
+      "type": "number"
+     },
+     {
+      "name": "v2_phi",
+      "type": "number"
+     },
+     {
+      "name": "v2_pay_gnk",
+      "type": "number"
+     },
+     {
+      "name": "v2_pay_usdt",
+      "type": "number"
+     },
+     {
+      "name": "v2_pay_usdc",
+      "type": "number"
+     },
+     {
+      "name": "v2_pay_dai",
+      "type": "number"
+     },
+     {
+      "name": "v2_pay_eth",
+      "type": "number"
+     },
+     {
+      "name": "v2_m_usd",
+      "type": "number"
+     },
+     {
+      "name": "v3_phi",
+      "type": "number"
+     },
+     {
+      "name": "v3_pay_gnk",
+      "type": "number"
+     },
+     {
+      "name": "v3_pay_usdt",
+      "type": "number"
+     },
+     {
+      "name": "v3_pay_usdc",
+      "type": "number"
+     },
+     {
+      "name": "v3_pay_dai",
+      "type": "number"
+     },
+     {
+      "name": "v3_pay_eth",
+      "type": "number"
+     },
+     {
+      "name": "v3_m_usd",
+      "type": "number"
+     },
+     {
+      "name": "v0_ignore_b_phi",
+      "type": "number"
+     },
+     {
+      "name": "v0_ignore_b_pay_gnk",
+      "type": "number"
+     },
+     {
+      "name": "v0_ignore_b_pay_usdt",
+      "type": "number"
+     },
+     {
+      "name": "v0_ignore_b_pay_usdc",
+      "type": "number"
+     },
+     {
+      "name": "v0_ignore_b_pay_dai",
+      "type": "number"
+     },
+     {
+      "name": "v0_ignore_b_pay_eth",
+      "type": "number"
+     },
+     {
+      "name": "v0_ignore_b_m_usd",
+      "type": "number"
+     },
+     {
+      "name": "v2_exp_phi",
+      "type": "number"
+     },
+     {
+      "name": "v2_exp_pay_gnk",
+      "type": "number"
+     },
+     {
+      "name": "v2_exp_pay_usdt",
+      "type": "number"
+     },
+     {
+      "name": "v2_exp_pay_usdc",
+      "type": "number"
+     },
+     {
+      "name": "v2_exp_pay_dai",
+      "type": "number"
+     },
+     {
+      "name": "v2_exp_pay_eth",
+      "type": "number"
+     },
+     {
+      "name": "v2_exp_m_usd",
+      "type": "number"
+     },
+     {
+      "name": "v2_ladder10_phi",
+      "type": "number"
+     },
+     {
+      "name": "v2_ladder10_pay_gnk",
+      "type": "number"
+     },
+     {
+      "name": "v2_ladder10_pay_usdt",
+      "type": "number"
+     },
+     {
+      "name": "v2_ladder10_pay_usdc",
+      "type": "number"
+     },
+     {
+      "name": "v2_ladder10_pay_dai",
+      "type": "number"
+     },
+     {
+      "name": "v2_ladder10_pay_eth",
+      "type": "number"
+     },
+     {
+      "name": "v2_ladder10_m_usd",
+      "type": "number"
+     },
+     {
+      "name": "v2_ladder0913_phi",
+      "type": "number"
+     },
+     {
+      "name": "v2_ladder0913_pay_gnk",
+      "type": "number"
+     },
+     {
+      "name": "v2_ladder0913_pay_usdt",
+      "type": "number"
+     },
+     {
+      "name": "v2_ladder0913_pay_usdc",
+      "type": "number"
+     },
+     {
+      "name": "v2_ladder0913_pay_dai",
+      "type": "number"
+     },
+     {
+      "name": "v2_ladder0913_pay_eth",
+      "type": "number"
+     },
+     {
+      "name": "v2_ladder0913_m_usd",
+      "type": "number"
+     },
+     {
+      "name": "v1_money_usd",
+      "type": "number"
+     },
+     {
+      "name": "v1_paid",
+      "type": "boolean"
+     },
+     {
+      "name": "v1_value_usd",
+      "type": "number"
+     },
+     {
+      "name": "v2_money_usd",
+      "type": "number"
+     },
+     {
+      "name": "v2_paid",
+      "type": "boolean"
+     },
+     {
+      "name": "v2_value_usd",
+      "type": "number"
+     },
+     {
+      "name": "v3_money_usd",
+      "type": "number"
+     },
+     {
+      "name": "v3_paid",
+      "type": "boolean"
+     },
+     {
+      "name": "v3_value_usd",
+      "type": "number"
+     },
+     {
+      "name": "v0_ignore_b_money_usd",
+      "type": "number"
+     },
+     {
+      "name": "v0_ignore_b_paid",
+      "type": "boolean"
+     },
+     {
+      "name": "v0_ignore_b_value_usd",
+      "type": "number"
+     },
+     {
+      "name": "v2_exp_money_usd",
+      "type": "number"
+     },
+     {
+      "name": "v2_exp_paid",
+      "type": "boolean"
+     },
+     {
+      "name": "v2_exp_value_usd",
+      "type": "number"
+     },
+     {
+      "name": "v2_ladder10_money_usd",
+      "type": "number"
+     },
+     {
+      "name": "v2_ladder10_paid",
+      "type": "boolean"
+     },
+     {
+      "name": "v2_ladder10_value_usd",
+      "type": "number"
+     },
+     {
+      "name": "v2_ladder0913_money_usd",
+      "type": "number"
+     },
+     {
+      "name": "v2_ladder0913_paid",
+      "type": "boolean"
+     },
+     {
+      "name": "v2_ladder0913_value_usd",
+      "type": "number"
+     },
+     {
+      "name": "differs",
+      "type": "boolean"
+     },
+     {
+      "name": "owner",
+      "type": "string"
+     },
+     {
+      "name": "group_size",
+      "type": "integer"
+     }
+    ]
+   }
+  },
+  {
+   "name": "model-summary-three-options-json",
+   "path": "model/summary_three_options.json",
+   "bytes": 23143,
+   "hash": "sha256:8ec4a86db425e515b13d90da52b3385144202df2a3d01a6d09a269c394b1e9c1",
+   "format": "json",
+   "mediatype": "application/json"
+  },
+  {
+   "name": "model-tx-deltas-windows-csv",
+   "path": "model/tx_deltas_windows.csv",
+   "bytes": 1131209,
+   "hash": "sha256:50f76c50e1e6a58f7b8ae1c96ecf3a90737a39f3e88aad087948e45a23520eda",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "schema": {
+    "fields": [
+     {
+      "name": "tx_hash",
+      "type": "string"
+     },
+     {
+      "name": "block",
+      "type": "integer"
+     },
+     {
+      "name": "address",
+      "type": "string"
+     },
+     {
+      "name": "entity",
+      "type": "string"
+     },
+     {
+      "name": "d_wgnk",
+      "type": "number"
+     },
+     {
+      "name": "d_usd",
+      "type": "number"
+     },
+     {
+      "name": "valued_by_pool_leg",
+      "type": "boolean"
+     },
+     {
+      "name": "tokens",
+      "type": "string"
+     },
+     {
+      "name": "is_lp_tx",
+      "type": "boolean"
+     },
+     {
+      "name": "tx_from",
+      "type": "string"
+     },
+     {
+      "name": "tx_to",
+      "type": "string"
+     },
+     {
+      "name": "eth_usd",
+      "type": "number"
+     },
+     {
+      "name": "ts",
+      "type": "number"
+     },
+     {
+      "name": "via_third_party",
+      "type": "string"
+     },
+     {
+      "name": "win",
+      "type": "string"
+     },
+     {
+      "name": "k_ladder",
+      "type": "number"
+     },
+     {
+      "name": "k_exp",
+      "type": "number"
+     },
+     {
+      "name": "k_ladder10",
+      "type": "number"
+     },
+     {
+      "name": "k_ladder0913",
+      "type": "number"
+     }
+    ]
+   }
+  },
+  {
+   "name": "model-variants-csv",
+   "path": "model/variants.csv",
+   "bytes": 960630,
+   "hash": "sha256:2dadd5a8e30d5d7db30b9c03dae30d575cd7419231d667e8236ccf3f47e21d89",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "schema": {
+    "fields": [
+     {
+      "name": "entity",
+      "type": "string"
+     },
+     {
+      "name": "addresses",
+      "type": "string"
+     },
+     {
+      "name": "is_hacker",
+      "type": "boolean"
+     },
+     {
+      "name": "b0_wallet",
+      "type": "number"
+     },
+     {
+      "name": "b0_pending_burn",
+      "type": "number"
+     },
+     {
+      "name": "lp_w_before",
+      "type": "number"
+     },
+     {
+      "name": "lp_u_before",
+      "type": "number"
+     },
+     {
+      "name": "lp_u_t1",
+      "type": "number"
+     },
+     {
+      "name": "lp_u_end",
+      "type": "number"
+     },
+     {
+      "name": "honest_wgnk",
+      "type": "number"
+     },
+     {
+      "name": "g_credited",
+      "type": "number"
+     },
+     {
+      "name": "wgnk_end_wallet",
+      "type": "number"
+     },
+     {
+      "name": "burn_pending_post",
+      "type": "number"
+     },
+     {
+      "name": "net_a_usd",
+      "type": "number"
+     },
+     {
+      "name": "net_b_usd",
+      "type": "number"
+     },
+     {
+      "name": "k_eff",
+      "type": "number"
+     },
+     {
+      "name": "k_eff_exp",
+      "type": "number"
+     },
+     {
+      "name": "k_eff_ladder10",
+      "type": "number"
+     },
+     {
+      "name": "a_w_in",
+      "type": "number"
+     },
+     {
+      "name": "a_usd_out",
+      "type": "number"
+     },
+     {
+      "name": "a_w_out",
+      "type": "number"
+     },
+     {
+      "name": "a_usd_in",
+      "type": "number"
+     },
+     {
+      "name": "a_lp_usd",
+      "type": "number"
+     },
+     {
+      "name": "a_n_tx",
+      "type": "number"
+     },
+     {
+      "name": "b_w_in",
+      "type": "number"
+     },
+     {
+      "name": "b_usd_out",
+      "type": "number"
+     },
+     {
+      "name": "b_w_out",
+      "type": "number"
+     },
+     {
+      "name": "b_usd_in",
+      "type": "number"
+     },
+     {
+      "name": "b_lp_usd",
+      "type": "number"
+     },
+     {
+      "name": "b_n_tx",
+      "type": "number"
+     },
+     {
+      "name": "a_via_usd",
+      "type": "number"
+     },
+     {
+      "name": "b_via_usd",
+      "type": "number"
+     },
+     {
+      "name": "b_first_ts",
+      "type": "number"
+     },
+     {
+      "name": "b_last_ts",
+      "type": "number"
+     },
+     {
+      "name": "has_b",
+      "type": "boolean"
+     },
+     {
+      "name": "category",
+      "type": "string"
+     },
+     {
+      "name": "v1_phi",
+      "type": "number"
+     },
+     {
+      "name": "v1_pay_gnk",
+      "type": "number"
+     },
+     {
+      "name": "v1_pay_usdt",
+      "type": "number"
+     },
+     {
+      "name": "v1_pay_usdc",
+      "type": "number"
+     },
+     {
+      "name": "v1_pay_dai",
+      "type": "number"
+     },
+     {
+      "name": "v1_pay_eth",
+      "type": "number"
+     },
+     {
+      "name": "v1_m_usd",
+      "type": "number"
+     },
+     {
+      "name": "v2_phi",
+      "type": "number"
+     },
+     {
+      "name": "v2_pay_gnk",
+      "type": "number"
+     },
+     {
+      "name": "v2_pay_usdt",
+      "type": "number"
+     },
+     {
+      "name": "v2_pay_usdc",
+      "type": "number"
+     },
+     {
+      "name": "v2_pay_dai",
+      "type": "number"
+     },
+     {
+      "name": "v2_pay_eth",
+      "type": "number"
+     },
+     {
+      "name": "v2_m_usd",
+      "type": "number"
+     },
+     {
+      "name": "v3_phi",
+      "type": "number"
+     },
+     {
+      "name": "v3_pay_gnk",
+      "type": "number"
+     },
+     {
+      "name": "v3_pay_usdt",
+      "type": "number"
+     },
+     {
+      "name": "v3_pay_usdc",
+      "type": "number"
+     },
+     {
+      "name": "v3_pay_dai",
+      "type": "number"
+     },
+     {
+      "name": "v3_pay_eth",
+      "type": "number"
+     },
+     {
+      "name": "v3_m_usd",
+      "type": "number"
+     },
+     {
+      "name": "v0_ignore_b_phi",
+      "type": "number"
+     },
+     {
+      "name": "v0_ignore_b_pay_gnk",
+      "type": "number"
+     },
+     {
+      "name": "v0_ignore_b_pay_usdt",
+      "type": "number"
+     },
+     {
+      "name": "v0_ignore_b_pay_usdc",
+      "type": "number"
+     },
+     {
+      "name": "v0_ignore_b_pay_dai",
+      "type": "number"
+     },
+     {
+      "name": "v0_ignore_b_pay_eth",
+      "type": "number"
+     },
+     {
+      "name": "v0_ignore_b_m_usd",
+      "type": "number"
+     },
+     {
+      "name": "v2_exp_phi",
+      "type": "number"
+     },
+     {
+      "name": "v2_exp_pay_gnk",
+      "type": "number"
+     },
+     {
+      "name": "v2_exp_pay_usdt",
+      "type": "number"
+     },
+     {
+      "name": "v2_exp_pay_usdc",
+      "type": "number"
+     },
+     {
+      "name": "v2_exp_pay_dai",
+      "type": "number"
+     },
+     {
+      "name": "v2_exp_pay_eth",
+      "type": "number"
+     },
+     {
+      "name": "v2_exp_m_usd",
+      "type": "number"
+     },
+     {
+      "name": "v2_ladder10_phi",
+      "type": "number"
+     },
+     {
+      "name": "v2_ladder10_pay_gnk",
+      "type": "number"
+     },
+     {
+      "name": "v2_ladder10_pay_usdt",
+      "type": "number"
+     },
+     {
+      "name": "v2_ladder10_pay_usdc",
+      "type": "number"
+     },
+     {
+      "name": "v2_ladder10_pay_dai",
+      "type": "number"
+     },
+     {
+      "name": "v2_ladder10_pay_eth",
+      "type": "number"
+     },
+     {
+      "name": "v2_ladder10_m_usd",
+      "type": "number"
+     },
+     {
+      "name": "v2_ladder0913_phi",
+      "type": "number"
+     },
+     {
+      "name": "v2_ladder0913_pay_gnk",
+      "type": "number"
+     },
+     {
+      "name": "v2_ladder0913_pay_usdt",
+      "type": "number"
+     },
+     {
+      "name": "v2_ladder0913_pay_usdc",
+      "type": "number"
+     },
+     {
+      "name": "v2_ladder0913_pay_dai",
+      "type": "number"
+     },
+     {
+      "name": "v2_ladder0913_pay_eth",
+      "type": "number"
+     },
+     {
+      "name": "v2_ladder0913_m_usd",
+      "type": "number"
+     },
+     {
+      "name": "v1_money_usd",
+      "type": "number"
+     },
+     {
+      "name": "v1_paid",
+      "type": "boolean"
+     },
+     {
+      "name": "v1_value_usd",
+      "type": "number"
+     },
+     {
+      "name": "v2_money_usd",
+      "type": "number"
+     },
+     {
+      "name": "v2_paid",
+      "type": "boolean"
+     },
+     {
+      "name": "v2_value_usd",
+      "type": "number"
+     },
+     {
+      "name": "v3_money_usd",
+      "type": "number"
+     },
+     {
+      "name": "v3_paid",
+      "type": "boolean"
+     },
+     {
+      "name": "v3_value_usd",
+      "type": "number"
+     },
+     {
+      "name": "v0_ignore_b_money_usd",
+      "type": "number"
+     },
+     {
+      "name": "v0_ignore_b_paid",
+      "type": "boolean"
+     },
+     {
+      "name": "v0_ignore_b_value_usd",
+      "type": "number"
+     },
+     {
+      "name": "v2_exp_money_usd",
+      "type": "number"
+     },
+     {
+      "name": "v2_exp_paid",
+      "type": "boolean"
+     },
+     {
+      "name": "v2_exp_value_usd",
+      "type": "number"
+     },
+     {
+      "name": "v2_ladder10_money_usd",
+      "type": "number"
+     },
+     {
+      "name": "v2_ladder10_paid",
+      "type": "boolean"
+     },
+     {
+      "name": "v2_ladder10_value_usd",
+      "type": "number"
+     },
+     {
+      "name": "v2_ladder0913_money_usd",
+      "type": "number"
+     },
+     {
+      "name": "v2_ladder0913_paid",
+      "type": "boolean"
+     },
+     {
+      "name": "v2_ladder0913_value_usd",
+      "type": "number"
+     },
+     {
+      "name": "differs",
+      "type": "boolean"
+     }
+    ]
+   }
+  },
+  {
+   "name": "registers-gonka-compensation-register-3-options-xlsx",
+   "path": "registers/Gonka_Compensation_Register_3_Options.xlsx",
+   "bytes": 491745,
+   "hash": "sha256:e865ad93964cbe23346cdd9524be2c32a4199b4ab0e1c617ecc8cdfd8f26d10c",
+   "format": "xlsx"
+  },
+  {
+   "name": "registers-attacker-addresses-csv",
+   "path": "registers/attacker_addresses.csv",
+   "bytes": 589,
+   "hash": "sha256:a3840c07fc2ff640e96f75222c69fb01f188fe7d4618bb0be6f86f72b1fac917",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "schema": {
+    "fields": [
+     {
+      "name": "chain",
+      "type": "string"
+     },
+     {
+      "name": "address",
+      "type": "string"
+     },
+     {
+      "name": "role",
+      "type": "string"
+     }
+    ]
+   }
+  },
+  {
+   "name": "registers-bridge-requests-in-flight-csv",
+   "path": "registers/bridge_requests_in_flight.csv",
+   "bytes": 9359,
+   "hash": "sha256:8d76cd8b631868d1a82d47abd23e3a8ed0f1203c16115ff2d2a645267f30d014",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "schema": {
+    "fields": [
+     {
+      "name": "gonka_sender",
+      "type": "string"
+     },
+     {
+      "name": "eth_destination",
+      "type": "string"
+     },
+     {
+      "name": "gnk",
+      "type": "number"
+     },
+     {
+      "name": "gonka_height",
+      "type": "integer"
+     },
+     {
+      "name": "time_utc",
+      "type": "string"
+     },
+     {
+      "name": "gonka_tx",
+      "type": "string"
+     },
+     {
+      "name": "after_attack",
+      "type": "boolean"
+     }
+    ]
+   }
+  },
+  {
+   "name": "registers-bridge-reserve-holders-gonka-csv",
+   "path": "registers/bridge_reserve_holders_gonka.csv",
+   "bytes": 4232,
+   "hash": "sha256:99411a4f949763bde28d702c9f1b321990c1af9295f6494ee58c449fd157cc95",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "schema": {
+    "fields": [
+     {
+      "name": "gonka_address",
+      "type": "string"
+     },
+     {
+      "name": "token",
+      "type": "string"
+     },
+     {
+      "name": "balance_before",
+      "type": "number"
+     },
+     {
+      "name": "balance_now",
+      "type": "number"
+     },
+     {
+      "name": "balance_before_units",
+      "type": "integer"
+     },
+     {
+      "name": "balance_now_units",
+      "type": "integer"
+     },
+     {
+      "name": "balance_units_at_7122700",
+      "type": "integer"
+     },
+     {
+      "name": "balance_units_at_7122900",
+      "type": "integer"
+     },
+     {
+      "name": "share_of_supply_before",
+      "type": "number"
+     },
+     {
+      "name": "address_kind",
+      "type": "string"
+     },
+     {
+      "name": "provenance_units",
+      "type": "string"
+     },
+     {
+      "name": "note",
+      "type": "string"
+     }
+    ]
+   }
+  },
+  {
+   "name": "registers-parameters-and-totals-csv",
+   "path": "registers/parameters_and_totals.csv",
+   "bytes": 1517,
+   "hash": "sha256:5ce885958ff016c9ef13186c921c781aa3e3b31e9263bc7c7999cef7195497f2",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "schema": {
+    "fields": [
+     {
+      "name": "parameter",
+      "type": "string"
+     },
+     {
+      "name": "value",
+      "type": "string"
+     }
+    ]
+   }
+  },
+  {
+   "name": "registers-register-csv",
+   "path": "registers/register.csv",
+   "bytes": 191966,
+   "hash": "sha256:b5fbf08b2be5e03f37aa5b5d6b23e8152a304af232cd1898347d0f4da1b82104",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "schema": {
+    "fields": [
+     {
+      "name": "payee_eth_address",
+      "type": "string"
+     },
+     {
+      "name": "gonka_address",
+      "type": "string"
+     },
+     {
+      "name": "gonka_address_status",
+      "type": "string"
+     },
+     {
+      "name": "category",
+      "type": "string"
+     },
+     {
+      "name": "option1_gnk",
+      "type": "number"
+     },
+     {
+      "name": "option1_usdt",
+      "type": "number"
+     },
+     {
+      "name": "option1_usdc",
+      "type": "number"
+     },
+     {
+      "name": "option1_dai",
+      "type": "number"
+     },
+     {
+      "name": "option1_eth",
+      "type": "number"
+     },
+     {
+      "name": "option2_gnk",
+      "type": "number"
+     },
+     {
+      "name": "option2_usdt",
+      "type": "number"
+     },
+     {
+      "name": "option2_usdc",
+      "type": "number"
+     },
+     {
+      "name": "option2_dai",
+      "type": "number"
+     },
+     {
+      "name": "option2_eth",
+      "type": "number"
+     },
+     {
+      "name": "option3_gnk",
+      "type": "number"
+     },
+     {
+      "name": "option3_usdt",
+      "type": "number"
+     },
+     {
+      "name": "option3_usdc",
+      "type": "number"
+     },
+     {
+      "name": "option3_dai",
+      "type": "number"
+     },
+     {
+      "name": "option3_eth",
+      "type": "number"
+     }
+    ]
+   }
+  },
+  {
+   "name": "registers-register-detailed-csv",
+   "path": "registers/register_detailed.csv",
+   "bytes": 627460,
+   "hash": "sha256:a04d9f155a56e93223c861c18600ff0e430def384690ddf65772c8d79c304852",
+   "format": "csv",
+   "mediatype": "text/csv",
+   "encoding": "utf-8",
+   "schema": {
+    "fields": [
+     {
+      "name": "payee_eth_address",
+      "type": "string"
+     },
+     {
+      "name": "owner_group",
+      "type": "string"
+     },
+     {
+      "name": "group_size",
+      "type": "integer"
+     },
+     {
+      "name": "all_addresses",
+      "type": "string"
+     },
+     {
+      "name": "gonka_address",
+      "type": "string"
+     },
+     {
+      "name": "gonka_address_status",
+      "type": "string"
+     },
+     {
+      "name": "gonka_key_already_signed",
+      "type": "boolean"
+     },
+     {
+      "name": "category",
+      "type": "string"
+     },
+     {
+      "name": "b0_wallet_wgnk",
+      "type": "number"
+     },
+     {
+      "name": "b0_pending_burn_wgnk",
+      "type": "number"
+     },
+     {
+      "name": "lp_wgnk_before",
+      "type": "number"
+     },
+     {
+      "name": "honest_wgnk",
+      "type": "number"
+     },
+     {
+      "name": "net_a_usd",
+      "type": "number"
+     },
+     {
+      "name": "net_b_usd",
+      "type": "number"
+     },
+     {
+      "name": "traded_after_warning",
+      "type": "boolean"
+     },
+     {
+      "name": "phi_option2",
+      "type": "number"
+     },
+     {
+      "name": "v1_gnk",
+      "type": "number"
+     },
+     {
+      "name": "v1_usdt",
+      "type": "number"
+     },
+     {
+      "name": "v1_usdc",
+      "type": "number"
+     },
+     {
+      "name": "v1_dai",
+      "type": "number"
+     },
+     {
+      "name": "v1_eth",
+      "type": "number"
+     },
+     {
+      "name": "v1_gnk_ngonka",
+      "type": "integer"
+     },
+     {
+      "name": "v1_usdt_units",
+      "type": "integer"
+     },
+     {
+      "name": "v1_usdc_units",
+      "type": "integer"
+     },
+     {
+      "name": "v1_dai_wei",
+      "type": "string"
+     },
+     {
+      "name": "v1_eth_wei",
+      "type": "string"
+     },
+     {
+      "name": "v1_value_usd",
+      "type": "number"
+     },
+     {
+      "name": "v1_paid",
+      "type": "boolean"
+     },
+     {
+      "name": "v2_gnk",
+      "type": "number"
+     },
+     {
+      "name": "v2_usdt",
+      "type": "number"
+     },
+     {
+      "name": "v2_usdc",
+      "type": "number"
+     },
+     {
+      "name": "v2_dai",
+      "type": "number"
+     },
+     {
+      "name": "v2_eth",
+      "type": "number"
+     },
+     {
+      "name": "v2_gnk_ngonka",
+      "type": "integer"
+     },
+     {
+      "name": "v2_usdt_units",
+      "type": "integer"
+     },
+     {
+      "name": "v2_usdc_units",
+      "type": "integer"
+     },
+     {
+      "name": "v2_dai_wei",
+      "type": "string"
+     },
+     {
+      "name": "v2_eth_wei",
+      "type": "string"
+     },
+     {
+      "name": "v2_value_usd",
+      "type": "number"
+     },
+     {
+      "name": "v2_paid",
+      "type": "boolean"
+     },
+     {
+      "name": "v3_gnk",
+      "type": "number"
+     },
+     {
+      "name": "v3_usdt",
+      "type": "number"
+     },
+     {
+      "name": "v3_usdc",
+      "type": "number"
+     },
+     {
+      "name": "v3_dai",
+      "type": "number"
+     },
+     {
+      "name": "v3_eth",
+      "type": "number"
+     },
+     {
+      "name": "v3_gnk_ngonka",
+      "type": "integer"
+     },
+     {
+      "name": "v3_usdt_units",
+      "type": "integer"
+     },
+     {
+      "name": "v3_usdc_units",
+      "type": "integer"
+     },
+     {
+      "name": "v3_dai_wei",
+      "type": "string"
+     },
+     {
+      "name": "v3_eth_wei",
+      "type": "string"
+     },
+     {
+      "name": "v3_value_usd",
+      "type": "number"
+     },
+     {
+      "name": "v3_paid",
+      "type": "boolean"
+     }
+    ]
+   }
+  }
+ ]
+}

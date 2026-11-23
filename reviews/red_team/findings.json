@@ -1,0 +1,354 @@
+{
+ "package": "Gonka_Bridge_Incident_Audit_Package",
+ "date": "2026-11-23",
+ "option": "1 unless stated",
+ "p0_usd": 0.1428805236181846,
+ "eth_usd": 1729.1468,
+ "classes": {
+  "a": "provable calculation or register error",
+  "b": "well-founded suspicion the package data cannot settle",
+  "c": "policy choice to disclose / principle contradicted by data"
+ },
+ "findings": [
+  {
+   "id": "F01",
+   "title": "One recipient receives 31.6% of all value and 43.1% of all money; with two addresses funded from the same bridge-in 34.9%; related-party status not disclosed; LP block outside the previous independent check",
+   "class": "b/c",
+   "owners": 3,
+   "gnk": 4377158.09,
+   "usd": 751841.6,
+   "details": {
+    "top1_address": "0x244186297b43ba43c92d68efe78c04170fbc0b10",
+    "top1_gnk": 3886258.09,
+    "top1_usdt": 126430.96,
+    "top1_value_usd": 681701.56,
+    "top1_share_value": 0.3163,
+    "top1_share_money": 0.4309,
+    "top1_share_usdt": 0.5951,
+    "lp_owners": 33,
+    "lp_value_usd": 858555.28,
+    "lp_share_value": 0.3983,
+    "lp_share_money": 0.588,
+    "second_lp": "0x6c07e00cc3847b687fbde78baa184c5098116c51",
+    "second_lp_value_usd": 164565.52,
+    "second_lp_eth": 21.5183
+   },
+   "example_addresses": [
+    "0x244186297b43ba43c92d68efe78c04170fbc0b10",
+    "0xbd3ca5a43f72e45faf4b142832110842113dc9f8",
+    "0xdf9f1857b655263c2e8669e7e57a8e4fa57115db",
+    "0x6c07e00cc3847b687fbde78baa184c5098116c51"
+   ],
+   "example_txs": [
+    "0x4b7ddcd84feb0ffa2f1760c6e7358358491c934c63214134a754d9a22bed813f",
+    "0xfcfbc8dae928b6747036294137dd16437b851b49b0a0c748b683a97d1d09377d"
+   ],
+   "remedy": "Disclose whether the top recipients are related parties and show totals with and without them; extend the independent check to LP owners incl. v4; confirm identity of the second LP before paying ETH."
+  },
+  {
+   "id": "F02",
+   "title": "Window A refunds go mostly to buyers who traded after the hack was public (Blockaid alert 18:28:27 UTC) and at crash prices; 24 refunded owners also burned purchased WGNK into the bridge",
+   "class": "c",
+   "owners": 150,
+   "gnk": 0,
+   "usd": 106568.68,
+   "details": {
+    "non_lp_refunds_usd": 120893.37,
+    "refunds_if_cutoff_at_first_public_alert_usd": 14324.7,
+    "owners_all_purchases_after_alert": 100,
+    "their_refunds_usd": 54986.06,
+    "share_of_purchase_volume_below_half_p0": 0.9972,
+    "avg_price_before_alert_rel_p0": 0.039,
+    "refunded_owners_with_posthack_burns": 24,
+    "their_refunds": 32432.99,
+    "their_burned_wgnk": 740934.21
+   },
+   "example_addresses": [
+    "0x967db5dd618088a300bcb2c742dee3b1150c601c",
+    "0x4422bfd3397300c853add791cb1eb3b922292cc2",
+    "0x3e8cb56202748d0d9f61ac10241294bf8e371b24",
+    "0xd46223b86687774ce138d964702852cea8612e33"
+   ],
+   "example_txs": [
+    "0x46343903e9e69a901e712a72ddd75b8f93d01967219e6d47d42b838e2e4e289d",
+    "0x8d8cc171e092b0ce5ababecd941745eeee05c327dd699c7a64a8d0a62c2c119c",
+    "0x27958d3d2e4db144db9b9b87d485417290b44d13de821536d928f44641fcb379"
+   ],
+   "remedy": "Disclose the cut-off sensitivity; vote separately on the tranche after the first public alert or apply the ladder from that alert; exclude from money refunds WGNK the buyer burned into the bridge."
+  },
+  {
+   "id": "F03",
+   "title": "'Nobody profits from the hack' is contradicted: 142 owners keep trading gains",
+   "class": "c",
+   "owners": 142,
+   "gnk": 0,
+   "usd": 96428.58,
+   "details": {
+    "share_of_stated_top_up": 0.5641,
+    "owners_ge_1000_usd": 16,
+    "top10_usd": 74689.72,
+    "gnk_actually_deducted": 62510.31,
+    "owners_with_deduction": 20,
+    "attacker_wgnk_sale_proceeds_usd": 188343.16
+   },
+   "example_addresses": [
+    "0x282b84f2c5b7effa51fe02169c8d48ac13257635",
+    "0x94fe33075ccda7a456f948828a14e7b7c0707b9b",
+    "0xb2bd9cb06312f0a718773d26e57b938301e315c6",
+    "0x024860b646a1221a802df406f8a6acadd2c37622",
+    "0x39c5b83450f319e5c970d5fd42f7131f203fc2fc"
+   ],
+   "example_txs": [
+    "0x8d8cc171e092b0ce5ababecd941745eeee05c327dd699c7a64a8d0a62c2c119c",
+    "0x29cf328d598efac958cf7e6e360d7f97283ea46e478d52e1b942e89aadc04304"
+   ],
+   "remedy": "Drop the wording or state the number and publish the list; cancel these owners' queued bridge burns (537,967.99 WGNK)."
+  },
+  {
+   "id": "F04",
+   "title": "Post-hack bridge burns and 'voided' WGNK are void only on paper (queued BRIDGE_PENDING records, tokens still transferable)",
+   "class": "b",
+   "owners": 41,
+   "gnk": 1280942.81,
+   "usd": 183021.78,
+   "details": {
+    "pending_records": 72,
+    "owners_paid_v1": 29,
+    "money_refunded_owners": 24,
+    "their_refunds_usd": 32432.99,
+    "their_queued_wgnk": 740934.21,
+    "escrow_gnk_now": 98276.76,
+    "pool_liquidity_at_T2_usd": 1003.67,
+    "old_wgnk_held_by_refunded_owners": 11663826.96
+   },
+   "example_addresses": [
+    "0x282b84f2c5b7effa51fe02169c8d48ac13257635",
+    "0xd46223b86687774ce138d964702852cea8612e33",
+    "0x4422bfd3397300c853add791cb1eb3b922292cc2"
+   ],
+   "example_txs": [
+    "0x27958d3d2e4db144db9b9b87d485417290b44d13de821536d928f44641fcb379"
+   ],
+   "remedy": "Make cancellation of post-hack pending burns and replacement/freezing of the old WGNK contract explicit preconditions of payout; define treatment of trades after T2."
+  },
+  {
+   "id": "F05",
+   "title": "Protocol top-up overstated: bridge escrow GNK not counted as a source; returned ETH held unconverted",
+   "class": "a (+c)",
+   "owners": 0,
+   "gnk": 97026.3,
+   "usd": 13863.17,
+   "details": {
+    "escrow_now_gnk": 98276.762424,
+    "stated_gnk_gap": 132011.99,
+    "gnk_gap_with_escrow": 34985.69,
+    "stated_top_up_usd": 170952.43,
+    "corrected_top_up_usd": 157089.26,
+    "eth_value_lost_since_return_usd": 45657.23
+   },
+   "example_addresses": [
+    "gonka1cjwjmyguyjaey70cgxxclxjh4wph3c8w0vvv63"
+   ],
+   "example_txs": [],
+   "remedy": "Add the escrow to the sources of funds; convert the stablecoin part of the returned ETH immediately; restate the top-up."
+  },
+  {
+   "id": "F06",
+   "title": "Clusters are keyed and paid at the alphabetically smallest address, not the address that held the tokens or paid the money; cluster rule has no minimum amount and ignores direction",
+   "class": "a/b",
+   "owners": 22,
+   "gnk": 246997.84,
+   "usd": 51836.92,
+   "details": {
+    "clusters": 45,
+    "clusters_gnk_on_non_key_address": 11,
+    "gnk_usd": 35291.18,
+    "clusters_money_paid_by_non_key": 11,
+    "money_usd": 16545.74,
+    "gnk_keyed_to_never_signed_addresses": 27119.72,
+    "net_effect_of_clustering_on_totals_usd": 858.96
+   },
+   "example_addresses": [
+    "0x3bf3d3edf01b3b32c6da935ceee20df24e918a8d",
+    "0x81f53aaa1558e9514bdbefbfebd8a34e74afa40a",
+    "0x9491d9bf3f3390f5077ec864f41eee8f6e94feac",
+    "0xd3224e0d7a1fd685a19ebd9c37bd3dfe78587692",
+    "0x2568db3570323e2fe8816d40b738a770ad195733"
+   ],
+   "example_txs": [
+    "0xc9b1843c9072c2267c7df58a6b61fab0f8d466fe9713182ee01b2b0c2d5cd7c9",
+    "0x4e77646b3248e557718d3d08936c99da5f1b2365d556a8af639cee5f30dd4c7c",
+    "0x6864d6eb70f03556fc967be97803c99fed73fd3a36ea1bda21a5bb29c22d6810"
+   ],
+   "remedy": "Pay GNK to the address holding at the snapshot and money to the paying address; use clusters only for netting; require a minimum amount and the holder's signature for merges."
+  },
+  {
+   "id": "F07",
+   "title": "Bridge-ins in flight (GNK locked on Gonka, WGNK never minted) are not in the register",
+   "class": "b",
+   "owners": null,
+   "gnk": 1250.46,
+   "usd": 178.67,
+   "details": {
+    "escrow_excess_pre_hack_gnk": 1216.56,
+    "locked_after_hack_gnk": 33.9,
+    "unmatched_requests": 54,
+    "unmatched_gnk": 139543.94,
+    "unmatched_usd_at_p0": 19938.11
+   },
+   "example_addresses": [
+    "0x40532476f722594ffa6a6e209aa7945e7b6fddb5",
+    "0x8dcea22381c00d75299b93f14e99b9684d6de097",
+    "0x85de15235dfdb7510867b9b727b48348bedc3641"
+   ],
+   "example_txs": [
+    "0f74a7cdc9aec99bb60a7797615d81a10d60b48df5d9a514e987a343a07894db",
+    "ce01c56f3e76bab797d589336d7c42a54a6a24ba165bb7b8af4afba96f60b393",
+    "22134787bf45089e0ef32ff3bf557de64c26f1ba527680b5d2071db8a39d5f69"
+   ],
+   "remedy": "Publish the status of every unmatched mint request and return locked GNK to the Gonka signer."
+  },
+  {
+   "id": "F08",
+   "title": "Third-party settlement: refund currency and payee are assumptions (solver/relayer inventories)",
+   "class": "b",
+   "owners": 78,
+   "gnk": 0,
+   "usd": 8318.05,
+   "details": {
+    "rows": 274,
+    "sales_attributed_usd": 1734.97
+   },
+   "example_addresses": [
+    "0x754dcfb2861547015b221e963b4133a71dbdc024",
+    "0xf70da97812cb96acdf810712aa562db8dfa3dbef",
+    "0xba3cb449bd2b4adddbc894d8697f5170800eadec"
+   ],
+   "example_txs": [
+    "0x001b67abf3bd1e38b4c6511911fcd93eecef4d3c23d49338dbf8a8716293f6a7"
+   ],
+   "remedy": "Pay these refunds only against a signed claim showing the paying leg."
+  },
+  {
+   "id": "F09",
+   "title": "Window-B netting: sale proceeds inside an ignored net loss are not deducted",
+   "class": "c",
+   "owners": 22,
+   "gnk": 0,
+   "usd": 2606.39,
+   "details": {
+    "refunded_owners": 4,
+    "their_proceeds_usd": 1317.22
+   },
+   "example_addresses": [
+    "0xd0162a989355b507f696feec3b835f073fe092d3"
+   ],
+   "example_txs": [],
+   "remedy": "Deduct window-B proceeds from sales of earlier inventory, or state the exception."
+  },
+  {
+   "id": "F10",
+   "title": "Money-only Uniswap v4 liquidity operations are not scanned (transaction set built from WGNK Transfer logs)",
+   "class": "a",
+   "owners": 2,
+   "gnk": 0,
+   "usd": 400.17,
+   "details": {
+    "events_not_scanned": 25,
+    "with_liquidity_change": 13,
+    "overpayment_option3_usd": 400.17,
+    "overpayment_option2_usd": 88.07,
+    "overpayment_all_options_usd": 6.09
+   },
+   "example_addresses": [
+    "0x5ec2ea4ecfa01e864c3c115c96613e93d99adaa7",
+    "0x4467aa359654154abfc0eb18e88672a1b0339d76"
+   ],
+   "example_txs": [
+    "0xff016b38b9be6c732d577bbaccce8aa82763ac4b35792177df773d6a7de26044",
+    "0xd875956aa46ac9bbc60d4aa55105c26394ebe8fe85ab2a052981d4e957cec437"
+   ],
+   "remedy": "Collect transactions by pool and PositionManager events as well."
+  },
+  {
+   "id": "F11",
+   "title": "'Pending pre-hack burns' are mostly stuck bridge records 41-135 days old",
+   "class": "c",
+   "owners": 4,
+   "gnk": 5007.03,
+   "usd": 715.41,
+   "details": {
+    "all_pending_pre_hack_gnk": 6048.59,
+    "from_day_of_hack_gnk": 1041.56
+   },
+   "example_addresses": [
+    "0x1f53749569718294ddccbc54fb0b71ebb35d6b68",
+    "0xd8af674fdd0cc0bbdc362f4fcb72b6c33c73e042",
+    "0x0cbd86289b101d8f057893cda45221ec49ae2689"
+   ],
+   "example_txs": [],
+   "remedy": "Disclose; cancel the old bridge records so they cannot be delivered twice."
+  },
+  {
+   "id": "F12",
+   "title": "Deliverability: recipients that never signed or are contracts; unreliable status column; unassigned pre-hack WGNK",
+   "class": "c",
+   "owners": 149,
+   "gnk": 797919.72,
+   "usd": 115899.71,
+   "details": {
+    "never_signed_recipients": 123,
+    "never_signed_usd": 115050.38,
+    "contracts": 26,
+    "contracts_usd": 849.33,
+    "unassigned_wgnk": 966.4
+   },
+   "example_addresses": [
+    "0xaa98db6beb33f051be7fb340b2852aca86937ed0",
+    "0x36331e299247e5d0d3261e1d9852f6e0cffee95c",
+    "0x9008d19f58aabd9ed0d60971565aa8510560ab41"
+   ],
+   "example_txs": [],
+   "remedy": "Define the claim procedure; check code at each address; decide on WGNK held by settlement contracts."
+  },
+  {
+   "id": "F13",
+   "title": "Option 1 <= 2 <= 3 is false for one owner",
+   "class": "a",
+   "owners": 1,
+   "gnk": 0,
+   "usd": 0.24,
+   "details": {
+    "v2_eth": 0.025,
+    "v3_eth": 0.024864
+   },
+   "example_addresses": [
+    "0x12ff7e2aea4162b63c6d1ed3b4f7e1f54a985c7b"
+   ],
+   "example_txs": [],
+   "remedy": "Check monotonicity on payouts, not on M; floor option 3 at option 2 per currency."
+  },
+  {
+   "id": "F14",
+   "title": "Purchases paid in untracked tokens and unpriced liquidity positions (confirmed small)",
+   "class": "c",
+   "owners": 14,
+   "gnk": 0,
+   "usd": 1842.36,
+   "details": {
+    "window_a_usd_est": 1586.74,
+    "window_b_usd_est": 255.62,
+    "unpriced_position_rows": 4
+   },
+   "example_addresses": [
+    "0xef34782298287a143d36b04530240d935ed3f59d",
+    "0xfe087b5faeac2f4ba5f65650feb8c2bffe5988ca",
+    "0x0b711dfaa26754ddebddce858561a643a7b9428d"
+   ],
+   "example_txs": [
+    "0xcc6d60297921b9ea601f39605828b92c737e593e696047395c61a94ba45b575c"
+   ],
+   "remedy": "Accept individual claims with a price reference."
+  }
+ ]
+}
